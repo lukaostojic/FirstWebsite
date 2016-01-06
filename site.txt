@@ -1,0 +1,56 @@
+ABOUT ME
+
+Hey there! My name is Luka, and while writing this paragraph I'm feeling like a seven-year-old kid writing his firs written work. While we're at the seven-year-olds, it's probably worth mentioning that I like creating "something out of nothing" since I'm aware of my existance. 
+
+----------------------------------------------------------------------------------
+
+Hey there! I have no idea how did you found me, but I'm glad you did. Feel free to look around and don't touch those green dots up there.
+
+You've probably seen that "I'm so creative and unique" part a dozen times, but when it comes to art I really am creative and quite an eccentric kind of guy. Sepaking of art - I've been into music production for almost a decade. I like to experiment by breaking the "rules" and constantly moving my boundaries of perspective, and I like "making something out of nothing" since I'm aware of my existence. I also enjoy complexity. In my free time, I'm trying to find a way to avoid excessive usage of "I" when writing English. I'm from Serbia, by the way.
+
+Frontend Web development is something I've discovered about seven - eight months ago (today is xx.xx.2016). Not even knowing what HTML is, I started this neverending journey which I find really enjoyable. I don't have any real experience at this field, but I know how to build a decently looking website.
+
+----------------------------------------------------------------------------------
+
+ABOUT WEBSITE
+
+First of all - design of this website in no way reflects my character. The site itself could be considered as an experiment which, at the end, came out pretty interesting. Yes, it probably is overhelmed by unnecessary animations, transitions and unnecessary stuff overall, and the point of all that is to show some of the skills and knowledge I managed to get over the time.
+
+Now for the technical stuff. This website has been built and designed completely from scratch. So, except for jQuery and Normalize.css, there aren't any external sources, which means - no CSS frameworks, grids, no JavaScript/jQuery plugins, etc.
+
+Music on this site has been produces by me as well. -Music? -Yeah, music.
+
+----------------------------------------------------------------------------------
+
+SHOUT-OUT
+
+I've learned everything I know so far by looking various Youtube tutorials and reading some articles/blog posts, which were made by people kind enough to share their knowledge for absolutely free. So, I'd like to thank them all:
+
+And of course, big up goest to all the people who contributed to Stack Overflow and saved my day so many times.
+
+----------------------------------------------------------------------------------
+
+OTHER TOOLS
+
+As you probably noticed, I'm not coming from a design background. Although I'm familiar with some basic functions of Adobe Photoshop and know how to draw beautiful circles and rectangles using Adobe Illustrator.
+
+When it comes to Web development, building and organizing code, Gulp steps in to get the job done. I've used Grunt as well, but for some reason I prefer Gulp. While I'm at the "reasons", there are quite a bit for which I don't like Bootstrap. Yes, I know how to use it, but I just don't like it. 
+
+----------------------------------------------------------------------------------
+
+                                <p><i class="fa fa-paint-brush"></i>As you probably noticed, I'm not coming from a graphic design background. Although I'm familiar with some basic functions of <span>Adobe Photoshop</span> and know how to draw beautiful circles and rectangles using <span>Adobe Illustrator</span>. Yeah!</p>
+                                <p><i class="fa fa-code"></i>When it comes to Web development, building and organizing code, <span>Gulp</span> steps in to get the job done. I've used <span>Grunt</span> as well, but for some reason I prefer Gulp. While I'm at the "reasons", there are quite a bit for which I don't like <span>Bootstrap</span>. Yes, I know how to use it, but I just don't like it. The same is true for <span>Wordpress.</span>
+
+----------------------------------------------------------------------------------
+
+HTML
+
+Doing my best to write it semantic and clean, although I like to complicate things, so my markup may look strange at the first sight.
+
+CSS
+
+Writing it in SASS and using most of the functions and possibilities of CSS3. I can make a website responsive and cross-browser compatible.
+
+JS
+
+Can't say I'm writing it 100% clean, but with jQuery I can make almost anything I want, one way or another. AngularJS is my next target.

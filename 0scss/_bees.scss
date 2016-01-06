@@ -1,0 +1,102 @@
+section.bees {
+	perspective: 1500px;
+	transform-style: preserve-3d;
+	transition: 0.5s;
+	
+	.three-container {
+		position: absolute;
+		top: 0;
+		left: 15%;
+		width: 50%;
+		height: 100vh;
+		perspective: 1500px;
+		perspective-origin: 35% 55%;
+		transform-style: preserve-3d;
+		animation: rotate-bees 6s infinite;
+		opacity: 0;
+
+		div {
+			@include flex-center;
+			box-sizing: border-box;
+			width: 20px;
+			height: 20px;
+			border: 1px solid white;
+			border-radius: 100%;
+			animation: border 6s infinite;
+			transition: all 1.5s;
+			cursor: default;
+
+			a {
+				width: 100%;
+				height: 100%;
+				@include flex-center;
+				animation: bee-a 6s infinite;
+				cursor: default;
+
+				img {
+					width: 75%;
+					height: auto;
+					cursor: default;
+				}
+			}
+		}
+	}
+
+	.unrotate {
+		animation: unrotate-bees 1s infinite;
+	}
+}
+
+section.more-bees {
+	position: absolute;
+	left: 47%;
+	top: 85px;
+	width: 50px;
+	height: 50px;
+
+	ul {
+
+		li {
+			position: absolute;
+			width: 40px;
+			height: 40px;
+
+			a {
+				position: absolute;
+				display: block;
+				border-radius: 100%;
+				width: 25%;
+				height: 25%;
+				background: orange;
+				animation: more-bees 2s infinite;
+			}
+		}
+
+		.ajmo {
+			transition: all 0.75s;
+		}
+	}
+}
+
+section.novo-hehe {
+	position: relative;
+	left: 0;
+	top: 0;
+	z-index: 150;
+	background: black;
+
+	.novo-div {
+		position: absolute;
+		left: -3200px;
+		bottom: 0;
+		transition: left 75s;
+
+		img {
+			position: relative;
+			bottom: 75%;
+			width: 200%;
+			height: 400%;
+			animation: big-pic 0.25s infinite;
+		}
+	}
+}

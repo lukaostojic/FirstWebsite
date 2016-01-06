@@ -1,0 +1,187 @@
+@media screen and (max-width: 1024px) {
+
+	.slide-container {
+		
+		.cube-mask {
+
+			// .sections {
+
+// About Me
+
+			section.about-me {
+
+				.about-me-container {
+
+					.about-me-images {
+
+						.image-background {
+							width: 300px;
+							height: 300px;
+						}
+
+						ul.about-me-icons {
+							display: none;
+						}
+					}
+				}
+			}
+
+// What I Do
+
+			section.what-i-do {
+
+				.what-i-do-container {
+
+					.what-i-do-images {
+
+						.image-mask {
+							width: 250px;
+							height: 250px;
+
+							img {
+								margin-left: 13px;
+								width: 45%;
+								height: auto;
+							}
+
+							a {
+								margin-left: -15px;
+								font-size: 90%;
+							}
+
+							&:hover {
+
+								a {
+									margin-top: 50px;
+								}
+							}
+
+							.hidden-tech {
+								bottom: -75px;
+
+								h3 {
+									left: 95px;
+								}
+
+								#javascript {
+									left: 55px;
+								}
+
+								p {
+									font-size: 90%;
+									width: 200px;
+								}
+							}
+						}
+					}
+
+					.other-tools {
+						bottom: 90px;
+					}
+				}
+			}
+
+// References
+
+			section.references {
+
+				.references-container {
+
+					.references-image-container {
+
+						.port-mask {
+
+							.port-mask-image {
+								width: 250px;
+								height: 250px;
+
+								&:before, &:after {
+									width: 250px;
+									height: 250px;
+								}
+
+								a.button {
+									width: 75px;
+									height: 75px;
+									line-height: 55px;
+									bottom: -22px;
+								}
+
+								a.close-port {
+									width: 75px;
+									height: 75px;
+									line-height: 75px;
+									top: 15px;
+								}
+
+								p {
+									font-size: 80%;
+								}
+							}
+
+							.button-switch {
+
+								a.close-port {
+									top: 15px;
+								}
+							}
+						}
+					}
+				}
+			}
+
+// Contact
+
+			section.contact {
+
+				.contact-container {
+
+					.contact-right-side {
+						width: 350px;
+
+						iframe {
+							position: relative;
+							bottom: 50px;
+							width: 410px;
+							height: 185px;
+						}
+
+						.contact-more-info {
+							right: 205px;
+
+							a {
+
+								i {
+									width: 35px;
+									height: 35px;
+									line-height: 37px;
+									font-size: 1.2em;
+								}
+							}
+
+							.contact-right-icons {
+								left: 305px;
+								top: 18px;
+
+								a {
+
+									i {
+										width: 40px;
+										height: 40px;
+										line-height: 40px;
+										font-size: 1.1em;
+										text-align: center;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 775px) {
+
+}

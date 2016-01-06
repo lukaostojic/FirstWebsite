@@ -1,0 +1,384 @@
+section.references {
+	// background-image: url('../img/references/cover.svg');
+	background-size: 135%;
+	background-position: 0% -15%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	.references-container {
+		position: relative;
+		top: 30px;
+		left: -17px;
+		width: 100%;
+		background-image: url('../img/portfolio/port4.png');
+		background-repeat: no-repeat;
+		background-position: 50% 60%;
+		// background-attachment: fixed;
+
+		.references-text {
+			@include flex-center;
+			flex-direction: column;
+			// border-top: 2px solid $white-ish;
+			// border-radius: 100%;
+			transition: all 0.5s;
+
+			h2 {
+				color: $red;
+				border-bottom: 2px solid $green;
+				border-radius: 10px;
+			}
+		}
+
+		.ref-text-transform {
+			transform: rotateX(90deg);
+		}
+
+		.references-image-container {
+			position: relative;
+			top: 50px;
+			width: 100%;
+			height: 800px;
+			@include flex-center;
+			flex-direction: row;
+
+			.port-mask {
+				position: relative;
+				@include flex-center;
+				flex-direction: column;
+				// margin-left: 15px;
+
+				span {
+					position: absolute;
+				    top: 50%;
+				    padding: 10px 20px;
+				    // background: $green;
+				    // text-decoration: underline;
+				    border-radius: 3px;
+				    color: $green;
+				    font-size: 1.2em;
+				    font-weight: bold;
+				    transition: all 0.5s;
+
+				    i {
+				    	width: 50px;
+				    	height: 50px;
+				    	border-radius: 100%;
+				    	// background: $green;
+				    	border: 2px $green;
+				    	border-style: dotted dotted solid solid;
+				    	position: relative;
+				    	left: 5px;
+				    	bottom: 25px;
+				    	font-size: 1.8rem;
+				    	color: $red;
+				    }
+				}
+
+				#site-one {
+					left: calc(42% - 25px);
+				}
+
+				#site-two {
+					left: calc(42% - 25px);
+				}
+
+				#site-three {
+					left: calc(42% - 15px);
+				}
+
+				.span-down {
+					transform: translateY(200px) scale(0);
+				}
+
+// Text
+
+				.port-mask-text {
+					position: relative;
+					bottom: 55px;
+					margin-left: 17px;
+					transition: all 0.5s;
+
+					h3, a, p, ul {
+						position: relative;
+						width: 150%;
+						visibility: hidden;
+						padding: 2px 5px;
+						// background-color: rgba(256,256,256,0.8);
+						color: $text-color;
+						transform: translateX(-2000px);
+						transition: all 0.5s;
+					}
+
+					h3 {
+						color: $green;
+					}
+
+					a {
+						text-decoration: underline;
+						bottom: 5px;
+					}
+
+					p {
+						// background-image: url('../img/header/noise.png');
+						bottom: 5px;
+					}
+
+					ul {
+						border-bottom: 2px solid $white-ish;
+						bottom: 5px;
+					}
+
+					.port-mask-text-show {
+						transform: translateX(0px);
+						visibility: visible;
+					}
+				}
+
+				.site-1 {
+					position: relative;
+				}
+
+				.site-2 {
+					position: relative;
+					right: calc(100% + 17px);
+				}
+
+				.site-3 {
+					position: relative;
+					right: calc(200% + 34px);
+				}
+
+// Img
+				
+				.port-mask-image {
+					position: relative;
+					bottom: 400px;
+					left: 0;
+					width: 320px;
+					height: 320px;
+					border-radius: 100%;
+					// border-right: 5px dotted $green;
+					@include flex-center;
+					flex-direction: column;
+					background-size: cover;
+					background-position: 50% 50%;
+					background-repeat: repeat-x;
+					z-index: 1;
+					// background-attachment: fixed;
+					opacity: 0.98;
+					box-shadow: 0px 20px 15px 0px rgba(0,0,0,0.75);
+					transition:
+						left 1.5s,
+						background-position 0.5s,
+						transform 1.5s,
+						visibility 0.25s,
+						opacity 0.25s,
+						box-shadow 2s;
+
+					&:before, &:after {
+					    content: '';
+					    position: absolute;
+					    left: 0px;
+					    top: 25px;
+					    width: 320px;
+					    height: 320px;
+					    border-bottom: 5px solid $green;
+					    // border-left: 5px solid $green;
+					    border-radius: 100%;
+					    z-index: -1;
+					    opacity: 0.6;
+					    transition: all 2s;
+					}
+
+					a.button {
+						position: relative;
+						bottom: -33px;
+						width: 100px;
+						height: 100px;
+						border-radius: 60px;
+						line-height: 80px;
+						display: block;
+						opacity: 0.9;
+						transition: all 0.3s;
+					}
+
+					a.close-port {
+						position: relative;
+						top: 25px;
+						text-align: center;
+						display: none;
+						width: 100px;
+						height: 100px;
+						background: $blue;
+						color: white;
+						border-radius: 60px;
+						line-height: 100px;
+						opacity: 0;
+						transition: all 0.3s;
+
+						&:hover {
+							box-shadow: 0px 50px 0px $green inset;
+						}
+					}
+
+					.site-2-buttons.close-port {
+						// top: 40px;
+					}
+
+					p {
+						text-align: center;
+						padding: 5px 15px;
+						// background: $blue;
+						color: white;
+						border-radius: 3px;
+						opacity: 0;
+						transform: translateY(800px) scale(0.5);
+						transition: opacity 0.3s, transform 0.5s;
+					}
+				}
+
+				.p1 {
+					background-image: url('../img/references/proba1.jpg');
+
+					&:before, &:after {
+						// border-bottom: 5px solid $red;
+					    border-left: 5px solid $red;
+					}
+				}
+
+				.p2 {
+					background-image: url('../img/references/proba2.jpg');
+					background-position: -500px 50%;
+
+					&:before, &:after {
+						// border-bottom: 5px solid $blue;
+					    border-left: 5px solid $blue;
+					}
+				}
+
+				.p3 {
+					background-image: url('../img/references/proba3.jpg');
+
+					&:before, &:after {
+						// border-bottom: 5px solid $orange;
+					    border-left: 5px solid $orange;
+					}
+				}
+
+				.port-mask-hover {
+					transform: scale(0.95);
+
+					p {
+						opacity: 1;
+						transform: translateY(30px) scale(1);
+					}
+				}
+
+// Anim
+
+				.image-1-left {
+					left: 180%;
+					animation: port-pic-resize 1.5s;
+
+					&:before {
+						transform: rotateY(180deg);
+						top: -5px;
+					}
+
+					&:after {
+						transform: rotateX(180deg);
+						left: -5px;
+						top: -5px;
+					}
+
+					p {
+						transform: translateY(200px) scale(0.1);
+						opacity: 0;
+					}
+				}
+
+				.image-2-left {
+					left: 80%;
+					animation: image-2-left 2s;
+
+					&:before {
+						transform: rotateY(180deg);
+						top: -5px;
+					}
+
+					&:after {
+						transform: rotateX(180deg);
+						left: -5px;
+						top: -5px;
+					}
+				}
+
+				.image-3-left {
+					left: -20%;
+					animation: image-3-left 1.5s;
+					box-shadow: inset -30px 0px 5px 10px rgba(0,0,0,0.75);
+
+					&:before {
+						transform: rotateY(540deg) scale(1.5);
+						top: -5px;
+					}
+
+					&:after {
+						transform: rotateX(540deg) scale(1.5);
+						left: -5px;
+						top: -5px;
+					}
+				}
+
+				.image-3-other {
+					transform: translateX(-300%) translateY(400px) scale(0) rotateZ(-360deg);
+				}
+
+				.image-3-other-2 {
+					transform: translateX(-300%) translateY(-400px) scale(0) rotateZ(720deg);
+				}
+
+				.image-remove-p {
+
+					p {
+						transform: translateY(800px) scale(0.1);
+						opacity: 0;
+						visibility: hidden;
+					}
+				}
+
+				.button-switch {
+					transform: scale(1.2);
+
+					a.button {
+						display: none;
+					}
+
+					a.close-port {
+						top: 25px;
+						display: block;
+						opacity: 0.9;
+						transform: scale(0.85);
+					}
+				}
+
+				.image-scale {
+					transform: scale(0);
+				}
+
+				.image-no-display {
+					opacity: 0;
+					display: none;
+				}
+
+				.image-resize {
+					animation: image-resize 1.5s;
+				}
+
+				.see-all-boop {
+					animation: see-all-boop 0.5s;
+				}
+			}
+		}
+	}
+}

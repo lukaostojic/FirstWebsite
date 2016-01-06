@@ -1,0 +1,160 @@
+section.about-me {
+
+	.about-me-container {
+		@include flex-center;
+		width: 100%;
+		margin-bottom: 10px;
+
+		.about-me-text {
+			width: 60%;
+			position: relative;
+
+			.show-hide {
+				position: relative;
+				margin-bottom: 25px;
+
+				a {
+					background: transparent;
+					position: relative;
+					display: flex;
+					width: 250px;
+					color: $text-color;
+
+					h2 {
+						position: relative;
+						bottom: 25px;
+						left: 25px;
+						transition: all 0.5s;
+					}
+
+					.text-move-1 {
+						transform: rotateX(360deg);
+						color: $red;
+					}
+
+					i {
+						position: absolute;
+						color: $green;
+						font-size: 1.2em;
+						transition: all 0.2s;
+					}
+				}
+
+				a:hover {
+
+					i {
+						animation: arrow-bounce 2s;
+					}
+				}
+
+				a:after {
+					position: absolute;
+					top: 30px;
+					left: 0;
+					margin-top: -5px;
+					width: 250px;
+					content: '';
+					border-bottom: 2px solid $white-ish;
+					transition: all 0.5s;
+				}
+
+				.border-animation-minus {
+					width: 100%;
+
+					&:after {
+						width: 15px;
+					}
+				}
+
+				.border-animation-plus {
+					width: 100%;
+
+					&:after {
+						width: 100%;
+					}
+				}
+
+				p {
+					position: relative;
+					bottom: 35px;
+					padding: 10px 0 10px 0;
+					margin: 0px 0px;
+					background: rgba(256,256,256,0.4);
+				}
+			}
+
+			.three {
+
+				a.slide-para {
+					margin: -10px 0;
+
+					p {
+
+						span {
+							color: $green;
+							font-weight: bold;
+						}
+					}
+				}
+			}
+		}
+
+		.about-me-images {
+			position: relative;
+			top: -145px;
+			left: 15px;
+			width: 40%;
+			margin: 25px 75px 25px 45px;
+
+			.image-background {
+				position: fixed;
+				top: 53px;
+				box-sizing: border-box;
+				width: 400px;
+				height: 400px;
+				background-image: url('../img/about-me/01.jpg');
+				background-position: 50% 10%;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-color: $green;
+				border-radius: 200px;
+				border: 10px solid $green;
+				animation: arrow-bounce 1s;
+				transition: all 0.3s;
+			}
+
+			ul.about-me-icons {
+				position: fixed;
+				top: 445px;
+				display: flex;
+				flex-direction: row;
+				transform: translateX(30px);
+
+				li {
+					position: relative;
+					width: 150px;
+					height: auto;
+					margin: 0 -20px;
+					border-radius: 10px;
+					transition: all 0.3s;
+
+					img {
+						position: relative;
+						left: 40px;
+						width: 50%;
+						height: auto;
+					}
+				}
+
+				li:nth-child(2) {
+					top: 25px;
+				}
+
+				li:nth-child(3) {
+					width: 165px;
+					height: auto;
+				}
+			}
+		}
+	}
+}

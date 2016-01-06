@@ -1,0 +1,343 @@
+section.header-navbar {
+	@include flex-center;
+	transition: all 0.5s;
+
+// Header
+
+	header {
+		width: 100%;
+		height: 100vh;
+		@include flex-center;
+		flex-direction: column;
+		order: 2;
+		background-image: url('../img/header/for-web.png');
+		background-repeat: no-repeat;
+		background-size: 250%;
+		background-position: -1% 50%;
+		transition: transform 0.5s, background-position 1s, background-size 10s;
+
+		.header-text {
+			padding: 10px 50px;
+			text-align: center;
+			@include flex-center;
+			flex-direction: column;
+			z-index: 10;
+			transition: all 0.5s;
+
+			h1 {
+				text-transform: uppercase;
+			}
+		}
+
+		.hide-header-text {
+			position: relative;
+			transform: scale(14);
+		}
+
+		.shiver-header-text {
+			animation: text-shiver 0.25s infinite;
+		}
+
+		.header-buttons {
+			@include flex-center;
+			flex-direction: row;
+			transition: all 0.5s;
+
+			a {
+				border: 1px solid $blue;
+			}
+		}
+
+		.header-rotate-div {
+			position: fixed;
+			top: 0;
+			left: 98%;
+			width: 500px; 
+			height: 360px; /*500px*/
+			background: $green;
+			animation: s-throw 10s infinite;
+			z-index: 5;
+			transform: skew(225deg);
+		}
+
+		.rot-2 {
+			width: 200px;
+			height: 200px;
+			background: white;
+			cursor: pointer;
+
+			.rot-2-animation {
+				position: relative;
+				top: 14px;
+				right: -33px;
+				transform: skew(-225deg) translateX(100px);
+
+				a {
+					display: block;
+					animation: arrow-bounce 2.5s infinite;
+					transition: all 0.5s
+				}
+			}
+
+			.up-visible {
+				transform: skew(-225deg) translateX(0px);
+			}
+		}
+
+		.svg-circle {
+			position: absolute;
+			left: 522px;
+			width: 200px;
+			height: 200px;
+			border-radius: 100%;
+			transition: all 1s;
+
+			svg {
+
+				path {
+					stroke-dasharray: 1080px;
+					stroke-dashoffset: 1080px;
+					transition: all 1s;
+				}
+			}
+
+			.inside-svg {
+				opacity: 0;
+				visibility: hidden;
+				position: relative;
+				left: 159px;
+				top: 163px;
+				width: 20px;
+				height: 20px;
+				border-radius: 100%;
+				background: $blue;
+				cursor: grab;
+				z-index: 100;
+				transition: all 1s;
+			}
+
+			.mouse-active {
+				cursor: grabbing;
+			}
+		}
+
+		.svg-circle-show {
+			top: 200px;
+			
+			svg {
+
+				path {
+					stroke-dashoffset: 0;
+					transition: stroke-dashoffset 1s;
+				}
+			}
+
+			.inside-svg {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+
+// Navbar	
+
+	nav {
+		order: 1;
+		position: relative;
+		transition: all 0.5s;
+
+		ul {
+			@include flex-center;
+			flex-direction: column;
+			height: 100vh;
+			z-index: 50;
+			transition: all 0.5s;
+
+			li {
+				position: relative;
+				left: 20px;
+				margin: 5px 0;
+				width: 95px;
+				height: 95px;
+				border-radius: 100%;
+				background-color: $green;
+				background-size: cover;
+				@include flex-center;
+				flex-direction: column;
+				box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.75);
+				cursor: pointer;
+				transition: all 0.3s;
+
+				a {
+					display: block;
+					color: white;
+					font-size: 2.5rem;
+					transition: all 0.75s ease-out;
+				}
+
+				&:after {
+					display: block;
+					width: 150px;
+					content: '';
+					position: absolute;
+					bottom: 33px;
+					right: 15px;
+					padding: 5px 10px;
+					background-color: $green;
+					color: white;
+					text-align: center;
+					border-radius: 4px;
+					opacity: 0;
+					transform: translateX(-150px);
+					transition: all 0.3s;
+				}
+
+
+				&:nth-child(1),
+				&:nth-child(4) {
+					left: 55px;
+				}
+			}
+
+			.li-rotate {
+				transform: rotateZ(90deg) translate(300px, -325px); 		/*ovde za media!!!!*/
+			}
+
+			.li-hover {
+				transform: translateX(-20px);
+				box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+				perspective: 100px;
+
+				a {
+					left: -10px;
+					transform: rotateY(50deg) translateX(-5px);
+				}
+
+				&:after {
+					opacity: 1;
+					transform: translateX(160px);
+					z-index: -5;
+				}
+
+				&:nth-child(1):after {
+					content: 'About';
+					
+				}
+
+				&:nth-child(2):after {
+					content: 'What I Do';
+				}
+
+				&:nth-child(3):after {
+					content: 'Portfolio';
+				}
+
+				&:nth-child(4):after {
+					content: 'Contact';
+				}
+			}
+
+			.li-active {
+				background: $dark-green;
+				// background: #13BC4C;
+			}
+
+			.new-hover {
+				border-left: 2px solid white;
+
+				&:hover {
+					background: $dark-green;
+					// background: #13BC4C;
+				}
+			}
+
+			.navbar-plus {
+				position: absolute;
+				left: 0px;
+				top: -65px;
+				height: 85px;
+				width: 78px;
+				border-radius: 100%;
+				padding: 5px 10px;
+				background: $blue;
+				cursor: pointer;
+				box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+				transform: translateX(334px) translateY(35px);
+
+				a {
+					position: relative;
+					bottom: 37%;
+					width: 80px;
+					font-size: 80%;
+					font-weight: 600;
+					transform: rotateZ(-180deg) translateX(35px) translateY(-31px);
+				}
+
+				a:after {
+					font-family: FontAwesome;
+					font-size: 5em;
+					content: "\f1b2";
+					position: absolute;
+					top: -25px;
+					left: -22px;
+					color: rgba(0,0,0,0.1);
+				}
+
+				a:before {
+				    position: absolute;
+				    left: -45px;
+				    top: -50px;
+				    height: 115px;
+				    width: 110px;
+				    transform: rotateY(180deg);
+				    content: '';
+				    border-left: 2px solid $blue;
+				    border-radius: 100%;
+				}
+
+				&:hover {
+					background: $red;
+				}
+			}
+
+			.nav-plus-hide {
+				visibility: hidden;
+			}
+
+		}
+
+		.ul-rotate {
+			transform: rotateZ(90deg) translate(15px, -550px);
+			// height: auto;
+
+			li {
+				margin: 30px 0px;
+				left: -54px;
+				box-shadow: 0px -10px 5px 0px rgba(0,0,0,0.75);
+
+				&:after {
+					width: 0px;
+					height: 0px;
+				}
+
+				a {
+
+					i {
+						transform: rotateX(180deg);
+					}
+				}
+			}
+
+			li:nth-child(1),
+			li:nth-child(2),
+			li:nth-child(3),
+			li:nth-child(4) {
+				left: -50px;
+			}
+		}
+	}
+
+	.nav-fall {
+		transform: translateY(90vh);
+	}			
+}
