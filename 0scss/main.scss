@@ -35,7 +35,6 @@ body {
 	font-weight: 400;
 	font-family: 'Source Sans Pro', sans-serif;
 	overflow: hidden;
-	// background-image: url('../img/header/back4.png');
 	background-image: url('../img/header/poza4.svg');
 	background-size: 95%;
 	background-position: 0% 25%;
@@ -204,23 +203,6 @@ ul {
 	&:hover {
 		box-shadow: 0px 50px 0px $green inset;
 		color: white;
-	}
-}
-
-// Footer
-
-footer {
-	position: relative;
-	top: 800px;
-	left: 0;
-
-	p {
-		width: 300px;
-		position: absolute;
-		top: 0;
-		left: calc(50% - 150px);
-		text-align: center;
-		margin-bottom: 20px;
 	}
 }
 

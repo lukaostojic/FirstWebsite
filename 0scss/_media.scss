@@ -76,7 +76,7 @@
 					}
 
 					.other-tools {
-						bottom: 90px;
+						bottom: 60px;
 					}
 				}
 			}
@@ -132,52 +132,52 @@
 
 // Contact
 
-			section.contact {
+			// section.contact {
 
-				.contact-container {
+			// 	.contact-container {
 
-					.contact-right-side {
-						width: 350px;
+			// 		.contact-right-side {
+			// 			width: 350px;
 
-						iframe {
-							position: relative;
-							bottom: 50px;
-							width: 410px;
-							height: 185px;
-						}
+			// 			iframe {
+			// 				position: relative;
+			// 				bottom: 50px;
+			// 				width: 410px;
+			// 				height: 185px;
+			// 			}
 
-						.contact-more-info {
-							right: 205px;
+			// 			.contact-more-info {
+			// 				right: 205px;
 
-							a {
+			// 				a {
 
-								i {
-									width: 35px;
-									height: 35px;
-									line-height: 37px;
-									font-size: 1.2em;
-								}
-							}
+			// 					i {
+			// 						width: 35px;
+			// 						height: 35px;
+			// 						line-height: 37px;
+			// 						font-size: 1.2em;
+			// 					}
+			// 				}
 
-							.contact-right-icons {
-								left: 305px;
-								top: 18px;
+			// 				.contact-right-icons {
+			// 					left: 305px;
+			// 					top: 18px;
 
-								a {
+			// 					a {
 
-									i {
-										width: 40px;
-										height: 40px;
-										line-height: 40px;
-										font-size: 1.1em;
-										text-align: center;
-									}
-								}
-							}
-						}
-					}
-				}
-			}
+			// 						i {
+			// 							width: 40px;
+			// 							height: 40px;
+			// 							line-height: 40px;
+			// 							font-size: 1.1em;
+			// 							text-align: center;
+			// 						}
+			// 					}
+			// 				}
+			// 			}
+			// 		}
+			// 	}
+			// }
 		}
 	}
 }
