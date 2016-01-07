@@ -1,10 +1,41 @@
 @media screen and (max-width: 1024px) {
 
+	section.header-navbar {
+
+				nav {
+
+					ul {
+
+						li {
+							width: 75px;
+							height: 75px;
+
+							a {
+								font-size: 2em;
+							}
+
+							&:after {
+								bottom: 23px;
+							}
+						}
+
+						.navbar-plus {
+							left: -52px;
+							top: -5px;
+							height: 69px;
+							width: 59px;
+
+							a {
+								bottom: 47%;
+							}
+						}
+					}
+				}
+			}
+
 	.slide-container {
 		
 		.cube-mask {
-
-			// .sections {
 
 // About Me
 
@@ -91,6 +122,10 @@
 
 						.port-mask {
 
+							span {
+								font-size: 95%;
+							}
+
 							.port-mask-image {
 								width: 250px;
 								height: 250px;
@@ -104,14 +139,14 @@
 									width: 75px;
 									height: 75px;
 									line-height: 55px;
-									bottom: -22px;
+									bottom: -30px;
 								}
 
 								a.close-port {
 									width: 75px;
 									height: 75px;
 									line-height: 75px;
-									top: 15px;
+									top: 25px;
 								}
 
 								p {
@@ -132,52 +167,78 @@
 
 // Contact
 
-			// section.contact {
+			section.contact {
 
-			// 	.contact-container {
+				.contact-container {
 
-			// 		.contact-right-side {
-			// 			width: 350px;
+					.contact-left-side {
 
-			// 			iframe {
-			// 				position: relative;
-			// 				bottom: 50px;
-			// 				width: 410px;
-			// 				height: 185px;
-			// 			}
+						form {
 
-			// 			.contact-more-info {
-			// 				right: 205px;
+							#contact-message {
+								width: 400px;
+							}
+						}
+					}
 
-			// 				a {
+					.contact-right-side {
+						
+						&:before {
+							width: 0px;
+							height: 0px;
+						}
 
-			// 					i {
-			// 						width: 35px;
-			// 						height: 35px;
-			// 						line-height: 37px;
-			// 						font-size: 1.2em;
-			// 					}
-			// 				}
+						.contact-more-info {
+							top: 120px;
+							left: -30px;
 
-			// 				.contact-right-icons {
-			// 					left: 305px;
-			// 					top: 18px;
+							a {
 
-			// 					a {
+								i {
+									width: 50px;
+									height: 50px;
+									line-height: 50px;
+									font-size: 1.2em;
+								}
+							}
 
-			// 						i {
-			// 							width: 40px;
-			// 							height: 40px;
-			// 							line-height: 40px;
-			// 							font-size: 1.1em;
-			// 							text-align: center;
-			// 						}
-			// 					}
-			// 				}
-			// 			}
-			// 		}
-			// 	}
-			// }
+							#phone {
+								position: relative;
+								left: 0px;
+							}
+
+							#mail {
+								position: relative;
+								left: 0px;
+							}
+
+							.contact-right-icons {
+								position: relative;
+								left: -37px;
+								top: 40px;
+
+								a {
+
+									i {
+										width: 50px;
+										height: 50px;
+										line-height: 50px;
+										font-size: 1.1em;
+										text-align: center;
+									}
+								}
+
+								a:hover {
+
+									i {
+										border-radius: 100%;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
