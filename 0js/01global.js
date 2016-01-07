@@ -50,7 +50,7 @@ var body = $('html, body'),
 
 // Scroll Animation Function
 
-function changeView(e) {
+function changeView() {
 	body.animate({
 		scrollTop: e
 	}, 600);

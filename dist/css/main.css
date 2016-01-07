@@ -77,6 +77,8 @@ body {
           -moz-user-select: none;
           -ms-user-select: none;
           user-select: none; }
+      body .site-wrapper .slide-container footer {
+        display: none; }
       body .site-wrapper .slide-container .mask-rotate {
         -webkit-transform: rotateY(360deg);
         transform: rotateY(360deg); }
@@ -2229,12 +2231,12 @@ section.contact .contact-container {
 @media screen and (max-width: 775px) {
   body {
     overflow: visible;
-    background-position: 0% 35%; }
+    background-position: 0% -15%; }
     body section.bees,
     body section.novo-hehe {
       display: none; }
     body .site-wrapper {
-      position: fixed;
+      position: absolute;
       overflow: scroll; }
       body .site-wrapper section.header-navbar header {
         background-position: 10% 30%; }
@@ -2273,6 +2275,55 @@ section.contact .contact-container {
         margin-top: 0px;
         height: 3500px;
         opacity: 1; }
+        body .site-wrapper .slide-container footer {
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          position: relative;
+          top: 98%;
+          height: 80px;
+          background: #109F94;
+          color: white; }
+          body .site-wrapper .slide-container footer .footer-up {
+            margin: 0 20px;
+            position: relative;
+            left: 0px;
+            top: 20px;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+            justify-content: space-around; }
+            body .site-wrapper .slide-container footer .footer-up .phone-and-mail a {
+              position: relative;
+              color: white;
+              line-height: 35px; }
+            body .site-wrapper .slide-container footer .footer-up .external-links {
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-align-items: center;
+              -ms-flex-align: center;
+              align-items: center; }
+              body .site-wrapper .slide-container footer .footer-up .external-links a {
+                color: white;
+                margin: 0 12px;
+                font-size: 1.4em; }
+          body .site-wrapper .slide-container footer .footer-down {
+            position: relative;
+            left: calc(50% - 100px);
+            width: 200px;
+            text-align: center; }
         body .site-wrapper .slide-container .cube-mask {
           display: -webkit-flex;
           display: -ms-flexbox;
@@ -2290,8 +2341,9 @@ section.contact .contact-container {
           body .site-wrapper .slide-container .cube-mask .sections {
             position: absolute;
             top: 50px;
-            border-bottom: 3px solid #109F94;
-            border-radius: 5%; }
+            border-radius: 3%;
+            box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+            background: rgba(255, 255, 255, 0.5); }
           body .site-wrapper .slide-container .cube-mask section.about-me {
             position: relative;
             -webkit-transform: translateZ(0px) scale(1);
@@ -2389,8 +2441,15 @@ section.contact .contact-container {
 @media screen and (max-width: 450px) {
   body .site-wrapper .slide-container {
     height: 3700px; }
+    body .site-wrapper .slide-container footer .footer-up {
+      top: 16px; }
+      body .site-wrapper .slide-container footer .footer-up .phone-and-mail a {
+        line-height: 22px; }
     body .site-wrapper .slide-container .cube-mask section.what-i-do .what-i-do-container .what-i-do-images .image-mask {
       margin: 0px -60px; }
       body .site-wrapper .slide-container .cube-mask section.what-i-do .what-i-do-container .what-i-do-images .image-mask:hover img {
         -webkit-transform: translateY(0px) rotateX(0deg);
         transform: translateY(0px) rotateX(0deg); } }
+@media screen and (max-height: 500px) {
+  section.header-navbar header {
+    background: none; } }

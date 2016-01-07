@@ -251,7 +251,7 @@
 
 	body {
 		overflow: visible;
-		background-position: 0% 35%;
+		background-position: 0% -15%;
 
 		section.bees,
 		section.novo-hehe {
@@ -259,7 +259,7 @@
 		}
 
 		.site-wrapper {
-			position: fixed;
+			position: absolute;
 			overflow: scroll;
 
 			section.header-navbar {
@@ -318,6 +318,57 @@
 				height: 3500px;
 				opacity: 1;
 
+				footer {
+					display: flex;
+					flex-direction: column;
+					position: relative;
+					top: 98%;
+					height: 80px;
+					background: $green;
+					color: white;
+
+					.footer-up {
+						margin: 0 20px;
+						position: relative;
+						left: 0px;
+						top: 20px;
+						display: flex;
+						flex-direction: row;
+						justify-content: space-around;
+
+						.phone-and-mail {
+
+							a {
+								position: relative;
+								color: white;
+								line-height: 35px;
+
+								i {
+									// position: absolute;
+									// right: 10px;
+								}
+							}
+						}
+
+						.external-links {
+							@include flex-center;
+							
+							a {
+								color: white;
+								margin: 0 12px;
+								font-size: 1.4em;
+							}
+						}
+					}
+
+					.footer-down {
+						position: relative;
+						left: calc(50% - 100px);
+						width: 200px;
+						text-align: center;
+					}
+				}
+
 				.cube-mask {
 					@include flex-center;
 					flex-direction: column;
@@ -326,8 +377,10 @@
 					.sections {
 						position: absolute;
 						top: 50px;
-						border-bottom: 3px solid $green;
-						border-radius: 5%;
+						// border-bottom: 1px solid $red;
+						border-radius: 3%;
+						box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.75);
+						background: rgba(256,256,256,0.5)
 					}
 
 // About Me --------------------------------------------------------------------
@@ -516,6 +569,25 @@
 	body .site-wrapper .slide-container {
 		height: 3700px;
 
+		footer {
+
+			.footer-up {
+				top: 16px;
+
+				.phone-and-mail {
+
+					a {
+						line-height: 22px;
+
+						i {
+							// position: absolute;
+							// right: 10px;
+						}
+					}
+				}
+			}
+		}
+
 		.cube-mask {
 
 			section.what-i-do {
@@ -539,4 +611,15 @@
 			}
 		}
 	}
+}
+
+@media screen and (max-height: 500px) {
+
+	section.header-navbar {
+
+		header {
+			background: none;
+		}
+	}
+
 }

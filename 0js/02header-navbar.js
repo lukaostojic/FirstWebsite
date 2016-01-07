@@ -258,4 +258,28 @@ $('.header-buttons').find('a').click(function(event) {
 	alert('Under Construction');
 });
 
+// New Navbar
+
+// var newNav = $('.small-nav ul').find('li');
+
+// newNav.find('a').click(function(event) {
+// 	var thisGoto = $(this).data('goTo');
+
+// 	if (thisGoto === 'about') {
+// 		e = aboutMe;
+// 		// changeView(e);
+// 	} else if (thisGoto === 'what') {
+// 		e = whatIdo;
+// 		// changeView(e);
+// 	} else if (thisGoto === 'port') {
+// 		e = references;
+// 		// changeView(e);
+// 	} else if (thisGoto === 'contact') {
+// 		e = contact;
+// 		// changeView(e);
+// 	}
+// 	e = header.offset().top;
+// 	changeView(e);
+// });
+
 // -------------------------------- //
