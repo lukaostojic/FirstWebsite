@@ -139,7 +139,13 @@ section.header-navbar {
 		}
 	}
 
-// Navbar	
+// Hidden Navbar
+
+	div.small-nav {
+		display: none;
+	}
+
+// Navbar
 
 	nav {
 		order: 1;

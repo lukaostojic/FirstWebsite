@@ -1102,6 +1102,8 @@ section.header-navbar {
       section.header-navbar header .svg-circle-show .inside-svg {
         opacity: 1;
         visibility: visible; }
+  section.header-navbar div.small-nav {
+    display: none; }
   section.header-navbar nav {
     -webkit-order: 1;
     -ms-flex-order: 1;
@@ -2224,3 +2226,171 @@ section.contact .contact-container {
         text-align: center; }
       .slide-container .cube-mask section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons a:hover i {
         border-radius: 100%; } }
+@media screen and (max-width: 775px) {
+  body {
+    overflow: visible;
+    background-position: 0% 35%; }
+    body section.bees,
+    body section.novo-hehe {
+      display: none; }
+    body .site-wrapper {
+      position: fixed;
+      overflow: scroll; }
+      body .site-wrapper section.header-navbar header {
+        background-position: 10% 30%; }
+        body .site-wrapper section.header-navbar header .header-buttons {
+          display: none; }
+        body .site-wrapper section.header-navbar header .header-rotate-div {
+          display: none; }
+        body .site-wrapper section.header-navbar header .svg-circle {
+          display: none; }
+        body .site-wrapper section.header-navbar header .svg-circle-show {
+          display: none; }
+      body .site-wrapper section.header-navbar div.small-nav {
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 60px;
+        background: rgba(255, 255, 255, 0.9);
+        z-index: 500; }
+        body .site-wrapper section.header-navbar div.small-nav ul {
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+          justify-content: space-around;
+          line-height: 60px; }
+          body .site-wrapper section.header-navbar div.small-nav ul li a {
+            color: #109F94;
+            font-weight: 600; }
+      body .site-wrapper section.header-navbar nav {
+        display: none; }
+      body .site-wrapper .slide-container {
+        margin-top: 0px;
+        height: 3500px;
+        opacity: 1; }
+        body .site-wrapper .slide-container .cube-mask {
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-justify-content: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          background: none; }
+          body .site-wrapper .slide-container .cube-mask .sections {
+            position: absolute;
+            top: 50px;
+            border-bottom: 3px solid #109F94;
+            border-radius: 5%; }
+          body .site-wrapper .slide-container .cube-mask section.about-me {
+            position: relative;
+            -webkit-transform: translateZ(0px) scale(1);
+            transform: translateZ(0px) scale(1); }
+            body .site-wrapper .slide-container .cube-mask section.about-me .about-me-container .about-me-text {
+              width: 100%;
+              margin-right: 36px; }
+            body .site-wrapper .slide-container .cube-mask section.about-me .about-me-container .about-me-images {
+              display: none; }
+          body .site-wrapper .slide-container .cube-mask section.what-i-do {
+            position: relative;
+            -webkit-transform: translateZ(0px) rotateY(0deg) scale(1);
+            transform: translateZ(0px) rotateY(0deg) scale(1); }
+            body .site-wrapper .slide-container .cube-mask section.what-i-do .what-i-do-container .what-i-do-images .image-mask {
+              margin: 0 -35px; }
+              body .site-wrapper .slide-container .cube-mask section.what-i-do .what-i-do-container .what-i-do-images .image-mask img {
+                left: 50px; }
+              body .site-wrapper .slide-container .cube-mask section.what-i-do .what-i-do-container .what-i-do-images .image-mask:hover {
+                -webkit-animation: none;
+                animation: none; }
+                body .site-wrapper .slide-container .cube-mask section.what-i-do .what-i-do-container .what-i-do-images .image-mask:hover a {
+                  display: none;
+                  -webkit-transform: translateY(0px);
+                  -ms-transform: translateY(0px);
+                  transform: translateY(0px); }
+                body .site-wrapper .slide-container .cube-mask section.what-i-do .what-i-do-container .what-i-do-images .image-mask:hover a:after, body .site-wrapper .slide-container .cube-mask section.what-i-do .what-i-do-container .what-i-do-images .image-mask:hover a:before {
+                  display: none;
+                  -webkit-transform: translateX(0px);
+                  -ms-transform: translateX(0px);
+                  transform: translateX(0px); }
+                body .site-wrapper .slide-container .cube-mask section.what-i-do .what-i-do-container .what-i-do-images .image-mask:hover img {
+                  -webkit-transform: translateY(50px) rotateX(45deg);
+                  transform: translateY(50px) rotateX(45deg); }
+            body .site-wrapper .slide-container .cube-mask section.what-i-do .what-i-do-container .other-tools {
+              left: 0;
+              width: 100%; }
+          body .site-wrapper .slide-container .cube-mask section.references {
+            position: relative;
+            -webkit-transform: translateY(0px) rotateX(0deg) scale(1);
+            transform: translateY(0px) rotateX(0deg) scale(1); }
+            body .site-wrapper .slide-container .cube-mask section.references .references-container {
+              background: none; }
+              body .site-wrapper .slide-container .cube-mask section.references .references-container .references-text p {
+                text-align: center;
+                margin: 0 10px; }
+              body .site-wrapper .slide-container .cube-mask section.references .references-container .references-image-container {
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column; }
+                body .site-wrapper .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .port-mask-text {
+                  display: none;
+                  width: 100%; }
+                body .site-wrapper .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .port-mask-image {
+                  bottom: 0px;
+                  width: 100vh;
+                  height: 200px;
+                  border-radius: 3px;
+                  margin: 10px;
+                  padding: 0 10px;
+                  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75); }
+                  body .site-wrapper .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .port-mask-image a.button {
+                    width: 120px;
+                    height: 50px;
+                    line-height: 29px;
+                    border-radius: 3px; }
+                  body .site-wrapper .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .port-mask-image:before, body .site-wrapper .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .port-mask-image:after {
+                    width: 0px;
+                    height: 0px;
+                    border-bottom: none; }
+                  body .site-wrapper .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .port-mask-image p {
+                    opacity: 1;
+                    -webkit-transform: translateY(30px) scale(1.2);
+                    -ms-transform: translateY(30px) scale(1.2);
+                    transform: translateY(30px) scale(1.2); }
+                body .site-wrapper .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .p1:before, body .site-wrapper .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .p1:after {
+                  border-left: none; }
+                body .site-wrapper .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .p2:before, body .site-wrapper .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .p2:after {
+                  border-left: none; }
+                body .site-wrapper .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .p3:before, body .site-wrapper .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .p3:after {
+                  border-left: none; }
+          body .site-wrapper .slide-container .cube-mask section.contact {
+            position: relative;
+            -webkit-transform: translateX(0px) translateY(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);
+            transform: translateX(0px) translateY(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1); }
+            body .site-wrapper .slide-container .cube-mask section.contact .contact-container .contact-left-side {
+              width: 100%; }
+              body .site-wrapper .slide-container .cube-mask section.contact .contact-container .contact-left-side form {
+                margin-right: 5px; }
+                body .site-wrapper .slide-container .cube-mask section.contact .contact-container .contact-left-side form #contact-name,
+                body .site-wrapper .slide-container .cube-mask section.contact .contact-container .contact-left-side form #contact-email,
+                body .site-wrapper .slide-container .cube-mask section.contact .contact-container .contact-left-side form #contact-message {
+                  width: 100%; }
+            body .site-wrapper .slide-container .cube-mask section.contact .contact-container .contact-right-side {
+              display: none; } }
+@media screen and (max-width: 450px) {
+  body .site-wrapper .slide-container {
+    height: 3700px; }
+    body .site-wrapper .slide-container .cube-mask section.what-i-do .what-i-do-container .what-i-do-images .image-mask {
+      margin: 0px -60px; }
+      body .site-wrapper .slide-container .cube-mask section.what-i-do .what-i-do-container .what-i-do-images .image-mask:hover img {
+        -webkit-transform: translateY(0px) rotateX(0deg);
+        transform: translateY(0px) rotateX(0deg); } }

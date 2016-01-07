@@ -1,3 +1,5 @@
+// 1024 --------------------------------------------------------------------------------------------------------------------------------
+
 @media screen and (max-width: 1024px) {
 
 	section.header-navbar {
@@ -243,6 +245,298 @@
 	}
 }
 
+// 775 ---------------------------------------------------------------------------------------------------------------------------------
+
 @media screen and (max-width: 775px) {
 
+	body {
+		overflow: visible;
+		background-position: 0% 35%;
+
+		section.bees,
+		section.novo-hehe {
+			display: none;
+		}
+
+		.site-wrapper {
+			position: fixed;
+			overflow: scroll;
+
+			section.header-navbar {
+
+				header {
+					background-position: 10% 30%;
+
+					.header-buttons {
+						display: none;
+					}
+
+					.header-rotate-div {
+						display: none;
+					}
+
+					.svg-circle {
+						display: none;
+					}
+
+					.svg-circle-show {
+						display: none;
+					}
+				}
+
+				div.small-nav {
+					position: fixed;
+					display: block;
+					width: 100%;
+					height: 60px;
+					background: rgba(256,256,256,0.9);
+					z-index: 500;
+					
+					ul {
+						display: flex;
+						flex-direction: row;
+						justify-content: space-around;
+						line-height: 60px;
+
+						li {
+
+							a {
+								color: $green;
+								font-weight: 600;
+							}
+						}
+					}
+				}
+
+				nav {
+					display: none;
+				}
+			}
+
+			.slide-container {
+				margin-top: 0px;
+				height: 3500px;
+				opacity: 1;
+
+				.cube-mask {
+					@include flex-center;
+					flex-direction: column;
+					background: none;
+
+					.sections {
+						position: absolute;
+						top: 50px;
+						border-bottom: 3px solid $green;
+						border-radius: 5%;
+					}
+
+// About Me --------------------------------------------------------------------
+
+					section.about-me {
+						position: relative;
+						transform: translateZ(0px) scale(1);
+
+						.about-me-container {
+
+							.about-me-text {
+								width: 100%;
+								margin-right: 36px;
+							}
+
+							.about-me-images {
+								display: none;
+							}
+						}
+					}
+
+// What I Do --------------------------------------------------------------------
+
+					section.what-i-do {
+						// background: rgba(0,0,0,0.5);
+						position: relative;
+						transform: translateZ(0px) rotateY(0deg) scale(1);
+
+						.what-i-do-container {
+
+							.what-i-do-images {
+
+								.image-mask {
+									margin: 0 -35px;
+
+									img {
+										left: 50px
+									}
+
+									&:hover {
+										animation: none;
+
+										a {
+											display: none;
+											transform: translateY(0px);
+										}
+
+										a:after, a:before {
+											display: none;
+											transform: translateX(0px);
+										}
+
+										img {
+											transform: translateY(50px) rotateX(45deg);
+										}
+									}
+								}
+							}
+
+							.other-tools {
+								left: 0;
+								width: 100%;
+							}
+						}
+					}
+
+// References --------------------------------------------------------------------
+
+					section.references {
+						position: relative;
+						transform: translateY(0px) rotateX(0deg) scale(1);
+
+						.references-container {
+							background: none;
+
+							.references-text {
+
+								p {
+									text-align: center;
+									margin: 0 10px;
+								}
+							}
+
+							.references-image-container {
+								flex-direction: column;
+
+								.port-mask {
+
+									.port-mask-text {
+										display: none;
+										width: 100%;
+									}
+
+									.port-mask-image {
+										bottom: 0px;
+										width: 100vh;
+										height: 200px;
+										border-radius: 3px;
+										margin: 10px;
+										padding: 0 10px;
+										box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+										// background-attachment: fixed;
+
+										a.button {
+											width: 120px;
+											height: 50px;
+											line-height: 29px;
+											border-radius: 3px;
+										}
+
+										&:before, &:after {
+										    width: 0px;
+										    height: 0px;
+										    border-bottom: none;
+										}
+
+										p {
+											opacity: 1;
+											transform: translateY(30px) scale(1.2);
+										}
+									}
+
+									.p1 {
+
+										&:before, &:after {
+										    border-left: none;
+										}
+									}
+
+									.p2 {
+
+										&:before, &:after {
+										    border-left: none;
+										}
+									}
+
+									.p3 {
+
+										&:before, &:after {
+										    border-left: none;
+										}
+									}
+								}
+							}
+						}
+					}
+
+// Contact --------------------------------------------------------------------
+
+					section.contact {
+						// background: rgba(0,0,0,0.5);
+						position: relative;
+						transform: translateX(0px) translateY(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);
+
+						.contact-container {
+
+							.contact-left-side {
+								width: 100%;
+
+								form {
+									margin-right: 5px;
+
+									#contact-name,
+									#contact-email,
+									#contact-message {
+										width: 100%;
+									}
+								}
+							}
+
+							.contact-right-side {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// 450 ---------------------------------------------------------------------------------------------------------------------------------
+
+@media screen and (max-width: 450px) {
+
+	body .site-wrapper .slide-container {
+		height: 3700px;
+
+		.cube-mask {
+
+			section.what-i-do {
+
+				.what-i-do-container {
+
+					.what-i-do-images {
+
+						.image-mask {
+							margin: 0px -60px;
+
+							&:hover {
+
+								img {
+									transform: translateY(0px) rotateX(0deg);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
