@@ -2303,7 +2303,9 @@ section.contact .contact-container {
           top: 98%;
           height: 80px;
           background: #109F94;
-          color: white; }
+          color: white;
+          -webkit-transform: translateZ(10px) translateY(-7px);
+          transform: translateZ(10px) translateY(-7px); }
           body .site-wrapper .slide-container footer .footer-up {
             margin: 0 20px;
             position: relative;
