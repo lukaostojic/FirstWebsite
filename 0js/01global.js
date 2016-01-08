@@ -50,21 +50,16 @@ var body = $('html, body'),
 
 // Scroll Animation Function
 
-function changeView() {
+function changeView(cv) {
 	body.animate({
-		scrollTop: e
+		scrollTop: cv
 	}, 600);
 }
 
-// Background Move (move)
-
-// $(document).mousemove(function(e) {
-// 	var mouseX = e.clientX / 40,
-// 		mouseY = e.clientY / 80;
-
-// 	body.css({
-// 		'background-position': mouseX + '%' + mouseY + '%'
-// 	});
-// });
+function wrapperScroll(scroll, speed) {
+	siteWrapper.animate({
+		scrollTop: scroll
+	}, speed);
+}
 
 // -------------------------------- //

@@ -27,29 +27,31 @@ imageMask.click(function(event) {
 		maskChildren = thisMask.siblings('.image-mask'),
 		thisText = thisMask.find('.hidden-tech');
 
-	thisMask.addClass('mask-on');
-	thisReadMore.addClass('after-before-remove');
-	setTimeout(function() {
-		thisImage.addClass('image-jump');
-	}, 250);
-	setTimeout(function() {
-		thisImage.removeClass('image-jump');
-		thisReadMore.removeClass('after-before-remove');
-	}, 800);
-	thisReadMore.css({
-		visibility: 'hidden'
-	});
-	maskChildren.removeClass('mask-on');
-	maskChildren.find('a').css({
-		visibility: 'visible'
-	});
-	maskChildren.find('.hidden-tech').removeClass('show-tech');
-	setTimeout(function() {
-		thisText.addClass('show-tech');
-		showAll
-		.show()
-		.addClass('see-all-boop');
-	}, 350);
+	if (winWidth >= 775) {
+		thisMask.addClass('mask-on');
+		thisReadMore.addClass('after-before-remove');
+		setTimeout(function() {
+			thisImage.addClass('image-jump');
+		}, 250);
+		setTimeout(function() {
+			thisImage.removeClass('image-jump');
+			thisReadMore.removeClass('after-before-remove');
+		}, 800);
+		thisReadMore.css({
+			visibility: 'hidden'
+		});
+		maskChildren.removeClass('mask-on');
+		maskChildren.find('a').css({
+			visibility: 'visible'
+		});
+		maskChildren.find('.hidden-tech').removeClass('show-tech');
+		setTimeout(function() {
+			thisText.addClass('show-tech');
+			showAll
+			.show()
+			.addClass('see-all-boop');
+		}, 350);
+	}
 	event.preventDefault();
 });
 

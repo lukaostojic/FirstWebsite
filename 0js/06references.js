@@ -47,52 +47,54 @@ viewMore.click(function(event) {
 		thisText = thisImg.siblings('.port-mask-text'),
 		goUp = thisImg.parent().siblings().children('.port-mask-image');
 
-	thisBtn.css({
-		opacity: '0'
-	});
-	e = refContainer.offset().top;
-	changeView(e);
-	portMaskSpan.addClass('span-down');
-	thisImg
-	.css({
-		'background-attachment': 'fixed'
-	})
-	.addClass('image-remove-p');
-	if (thisBtn.hasClass('site-1-buttons')) {
-		thisImg.addClass('image-1-left');
-		p2.addClass('image-scale');
-		setTimeout(function() {
-			p3.addClass('image-scale');
-		}, 500);
-	} else if (thisBtn.hasClass('site-2-buttons')) {
-		refImage.addClass('image-scale');
+	if (winWidth >= 775) {
+		thisBtn.css({
+			opacity: '0'
+		});
+		cv = refContainer.offset().top;
+		changeView(cv);
+		portMaskSpan.addClass('span-down');
 		thisImg
-		.addClass('image-2-left');
-		setTimeout(function() {
-			thisImg.removeClass('image-scale');
-		}, 500);
-	} else if (thisBtn.hasClass('site-3-buttons')) {
-		thisImg.addClass('image-3-left');
-		setTimeout(function() {
-			p2.addClass('image-3-other');
-		}, 150);
-		setTimeout(function() {
-			p1.addClass('image-3-other-2');
-		}, 400);
-	}
-	setTimeout(function() {
-		thisImg
-		.addClass('button-switch');
-		goUp.addClass('image-no-display');
-		if (thisImg.hasClass('p1')) {
-			e = sectionOne;
-		} else if (thisImg.hasClass('p2')) {
-			e = sectionTwo;
-		} else {
-			e = sectionThree;
+		.css({
+			'background-attachment': 'fixed'
+		})
+		.addClass('image-remove-p');
+		if (thisBtn.hasClass('site-1-buttons')) {
+			thisImg.addClass('image-1-left');
+			p2.addClass('image-scale');
+			setTimeout(function() {
+				p3.addClass('image-scale');
+			}, 500);
+		} else if (thisBtn.hasClass('site-2-buttons')) {
+			refImage.addClass('image-scale');
+			thisImg
+			.addClass('image-2-left');
+			setTimeout(function() {
+				thisImg.removeClass('image-scale');
+			}, 500);
+		} else if (thisBtn.hasClass('site-3-buttons')) {
+			thisImg.addClass('image-3-left');
+			setTimeout(function() {
+				p2.addClass('image-3-other');
+			}, 150);
+			setTimeout(function() {
+				p1.addClass('image-3-other-2');
+			}, 400);
 		}
-		dominesIn(e);
-	}, 1550);
+		setTimeout(function() {
+			thisImg
+			.addClass('button-switch');
+			goUp.addClass('image-no-display');
+			if (thisImg.hasClass('p1')) {
+				e = sectionOne;
+			} else if (thisImg.hasClass('p2')) {
+				e = sectionTwo;
+			} else {
+				e = sectionThree;
+			}
+			dominesIn(e);
+		}, 1550);
+	}
 	event.preventDefault();
 });
 

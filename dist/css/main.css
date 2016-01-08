@@ -1033,6 +1033,10 @@ section.header-navbar {
       transition: all 0.5s; }
       section.header-navbar header .header-buttons a {
         border: 1px solid #0C73B8; }
+      section.header-navbar header .header-buttons .hidden-header-button {
+        display: none;
+        position: relative;
+        top: 20px; }
     section.header-navbar header .header-rotate-div {
       position: fixed;
       top: 0;
@@ -2237,11 +2241,17 @@ section.contact .contact-container {
       display: none; }
     body .site-wrapper {
       position: absolute;
-      overflow: scroll; }
+      overflow: auto; }
       body .site-wrapper section.header-navbar header {
-        background-position: 10% 30%; }
-        body .site-wrapper section.header-navbar header .header-buttons {
+        background-position: 5% 30%;
+        background-size: 300%; }
+        body .site-wrapper section.header-navbar header .header-buttons a.button {
           display: none; }
+        body .site-wrapper section.header-navbar header .header-buttons a.hidden-header-button {
+          width: 100px;
+          height: 38px;
+          font-size: 80%;
+          left: 4 px; }
         body .site-wrapper section.header-navbar header .header-rotate-div {
           display: none; }
         body .site-wrapper section.header-navbar header .svg-circle {
@@ -2250,6 +2260,8 @@ section.contact .contact-container {
           display: none; }
       body .site-wrapper section.header-navbar div.small-nav {
         position: fixed;
+        top: 0px;
+        left: 0px;
         display: block;
         width: 100%;
         height: 60px;
@@ -2291,7 +2303,7 @@ section.contact .contact-container {
             margin: 0 20px;
             position: relative;
             left: 0px;
-            top: 20px;
+            top: 16px;
             display: -webkit-flex;
             display: -ms-flexbox;
             display: flex;
@@ -2301,10 +2313,20 @@ section.contact .contact-container {
             -webkit-justify-content: space-around;
             -ms-flex-pack: distribute;
             justify-content: space-around; }
-            body .site-wrapper .slide-container footer .footer-up .phone-and-mail a {
-              position: relative;
-              color: white;
-              line-height: 35px; }
+            body .site-wrapper .slide-container footer .footer-up .phone-and-mail {
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center; }
+              body .site-wrapper .slide-container footer .footer-up .phone-and-mail a {
+                position: relative;
+                color: white;
+                line-height: 22px; }
             body .site-wrapper .slide-container footer .footer-up .external-links {
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -2351,6 +2373,12 @@ section.contact .contact-container {
             body .site-wrapper .slide-container .cube-mask section.about-me .about-me-container .about-me-text {
               width: 100%;
               margin-right: 36px; }
+              body .site-wrapper .slide-container .cube-mask section.about-me .about-me-container .about-me-text .show-hide a:after {
+                width: 0px; }
+              body .site-wrapper .slide-container .cube-mask section.about-me .about-me-container .about-me-text .show-hide .border-animation-minus:after {
+                width: 0px; }
+              body .site-wrapper .slide-container .cube-mask section.about-me .about-me-container .about-me-text .show-hide .border-animation-plus:after {
+                width: 0px; }
             body .site-wrapper .slide-container .cube-mask section.about-me .about-me-container .about-me-images {
               display: none; }
           body .site-wrapper .slide-container .cube-mask section.what-i-do {
@@ -2385,7 +2413,8 @@ section.contact .contact-container {
             -webkit-transform: translateY(0px) rotateX(0deg) scale(1);
             transform: translateY(0px) rotateX(0deg) scale(1); }
             body .site-wrapper .slide-container .cube-mask section.references .references-container {
-              background: none; }
+              background: none;
+              top: -30px; }
               body .site-wrapper .slide-container .cube-mask section.references .references-container .references-text p {
                 text-align: center;
                 margin: 0 10px; }
@@ -2437,7 +2466,9 @@ section.contact .contact-container {
                 body .site-wrapper .slide-container .cube-mask section.contact .contact-container .contact-left-side form #contact-message {
                   width: 100%; }
             body .site-wrapper .slide-container .cube-mask section.contact .contact-container .contact-right-side {
-              display: none; } }
+              display: none; }
+    body .overflow-visible {
+      overflow: visible; } }
 @media screen and (max-width: 450px) {
   body .site-wrapper .slide-container {
     height: 3700px; }

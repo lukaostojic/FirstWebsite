@@ -42,8 +42,8 @@ navbarLi.click(function(event) {
 			e = win.offset().top;
 		}
 	setTimeout(function() {
-		e = slideContainer.offset().top;
-		changeView(e);
+		cv = slideContainer.offset().top;
+		changeView(cv);
 	}, 500);
 	navbarLi.each(function(i) {
 		setTimeout(function() {
@@ -73,9 +73,7 @@ navbarLi.click(function(event) {
 		header.css({
 			'background-position': '-40% 50%'
 		});
-		if (winWidth > 850) {
-			navbar.find('.navbar-plus').show(150);
-		}
+		navbar.find('.navbar-plus').show(150);
 		beeCont.css({
 			opacity: '0'
 		});
@@ -145,8 +143,8 @@ var backToTop = $('.rot-2');
 backToTop.click(function(event) {
 	var thisLi = navbarLi;
 
-	e = headerNavbar.offset().top;
-	changeView(e);
+	cv = headerNavbar.offset().top;
+	changeView(cv);
 	setTimeout(function() {
 		navbar.removeClass('ul-rotate');
 		upButton.removeClass('up-visible');
@@ -254,32 +252,32 @@ $(document).on('click', '.navbar-plus', function(event) {
 
 // Work In Progress (click)
 
-$('.header-buttons').find('a').click(function(event) {
-	alert('Under Construction');
-});
+// $('.header-buttons').find('a').click(function(event) {
+// 	alert('Under Construction');
+// });
 
 // New Navbar
 
-// var newNav = $('.small-nav ul').find('li');
+var newNav = $('.small-nav').find('ul');
 
-// newNav.find('a').click(function(event) {
-// 	var thisGoto = $(this).data('goTo');
+newNav.find('li').click(function() {
+	var thisLi = $(this),
+		thisGoto = thisLi.data('go');
 
-// 	if (thisGoto === 'about') {
-// 		e = aboutMe;
-// 		// changeView(e);
-// 	} else if (thisGoto === 'what') {
-// 		e = whatIdo;
-// 		// changeView(e);
-// 	} else if (thisGoto === 'port') {
-// 		e = references;
-// 		// changeView(e);
-// 	} else if (thisGoto === 'contact') {
-// 		e = contact;
-// 		// changeView(e);
-// 	}
-// 	e = header.offset().top;
-// 	changeView(e);
-// });
+	if (thisGoto === 'about') {
+		scroll = aboutMe.offset().top - 65;
+		speed = 400;
+	} else if (thisGoto === 'what') {
+		scroll = whatIdo.offset().top - 65;
+		speed = 800;
+	} else if (thisGoto === 'port') {
+		scroll = references.offset().top - 65;
+		speed = 1200;
+	} else if (thisGoto === 'contact') {
+		scroll = contact.offset().top - 65;
+		speed = 1600;
+	}
+	wrapperScroll(scroll, speed);
+});
 
 // -------------------------------- //

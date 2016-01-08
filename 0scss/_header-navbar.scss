@@ -46,6 +46,12 @@ section.header-navbar {
 			a {
 				border: 1px solid $blue;
 			}
+
+			.hidden-header-button {
+				display: none;
+				position: relative;
+				top: 20px;
+			}
 		}
 
 		.header-rotate-div {
