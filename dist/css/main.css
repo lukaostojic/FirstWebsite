@@ -1844,16 +1844,16 @@ section.references {
             transition: opacity 0.3s, -webkit-transform 0.5s;
             transition: opacity 0.3s, transform 0.5s; }
         section.references .references-container .references-image-container .port-mask .p1 {
-          background-image: url("../img/references/proba1.jpg"); }
+          background-image: url("../img/portfolio/proba1.jpg"); }
           section.references .references-container .references-image-container .port-mask .p1:before, section.references .references-container .references-image-container .port-mask .p1:after {
             border-left: 5px solid #E55126; }
         section.references .references-container .references-image-container .port-mask .p2 {
-          background-image: url("../img/references/proba2.jpg");
+          background-image: url("../img/portfolio/proba2.jpg");
           background-position: -500px 50%; }
           section.references .references-container .references-image-container .port-mask .p2:before, section.references .references-container .references-image-container .port-mask .p2:after {
             border-left: 5px solid #0C73B8; }
         section.references .references-container .references-image-container .port-mask .p3 {
-          background-image: url("../img/references/proba3.jpg"); }
+          background-image: url("../img/portfolio/proba3.jpg"); }
           section.references .references-container .references-image-container .port-mask .p3:before, section.references .references-container .references-image-container .port-mask .p3:after {
             border-left: 5px solid #FFA500; }
         section.references .references-container .references-image-container .port-mask .port-mask-hover {
