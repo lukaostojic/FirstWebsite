@@ -6,13 +6,13 @@ $back-color: white;
 
 $blue: #0C73B8;
 
-$green: #109F94; /*#14C23A*/
+$green: #109F94;
 
 $dark-green: #01876A;
 
 $white-ish: #E4EAEA;
 
-$orange: #FFA500; /*#E5A228*/
+$orange: #FFA500;
 
 $red: #E55126;
 
@@ -40,7 +40,6 @@ body {
 	background-position: 0% 25%;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	// animation: body-back 20s infinite;
 	transition: background-size 1.5s ease-in-out;
 
 	.site-wrapper {
@@ -53,19 +52,13 @@ body {
 			transform-style: preserve-3D;
 			perspective: 2000px;
 			width: 100%;
-			// max-width: 1600px;
 			height: 800px;
 			position: absolute;
 			opacity: 0;
-			// background-image: url('../img/slide-container/slide-cont-back.svg');
-			background-position: 70% 25%;
-			background-repeat: no-repeat;
-			background-attachment: fixed;
 			transition: all 0.5s;
 
 			.cube-mask {
 				transform-style: preserve-3D;
-				// perspective-origin: 25% 90%;
 				width: 100%;
 				height: 100%;
 				position: absolute;

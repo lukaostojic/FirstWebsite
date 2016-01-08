@@ -59,7 +59,7 @@ section.header-navbar {
 			top: 0;
 			left: 98%;
 			width: 500px; 
-			height: 360px; /*500px*/
+			height: 360px;
 			background: $green;
 			animation: s-throw 10s infinite;
 			z-index: 5;
@@ -212,7 +212,7 @@ section.header-navbar {
 			}
 
 			.li-rotate {
-				transform: rotateZ(90deg) translate(300px, -325px); 		/*ovde za media!!!!*/
+				transform: rotateZ(90deg) translate(300px, -325px);
 			}
 
 			.li-hover {
@@ -251,7 +251,7 @@ section.header-navbar {
 
 			.li-active {
 				background: $dark-green;
-				// background: #13BC4C;
+				background: #E5A228;
 			}
 
 			.new-hover {
@@ -259,7 +259,7 @@ section.header-navbar {
 
 				&:hover {
 					background: $dark-green;
-					// background: #13BC4C;
+					background: #E5A228;
 				}
 			}
 
@@ -273,7 +273,6 @@ section.header-navbar {
 				padding: 5px 10px;
 				background: $blue;
 				cursor: pointer;
-				// opacity: 0;
 				box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
 				transform: translateX(334px) translateY(35px);
 
@@ -322,7 +321,6 @@ section.header-navbar {
 
 		.ul-rotate {
 			transform: rotateZ(90deg) translate(15px, -550px);
-			// height: auto;
 
 			li {
 				margin: 30px 0px;
