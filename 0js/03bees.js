@@ -200,6 +200,9 @@ beeCont.find('div').click(function() {
 			intervalImage+=1.5;
 		}, 2500);
 	}, 19000);
+	setTimeout(function() {
+		headerText.removeClass('shiver-header-text');
+	}, 22000);
 });
 
 // -------------------------------- //

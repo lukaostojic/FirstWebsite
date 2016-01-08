@@ -273,6 +273,7 @@ section.header-navbar {
 				padding: 5px 10px;
 				background: $blue;
 				cursor: pointer;
+				// opacity: 0;
 				box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
 				transform: translateX(334px) translateY(35px);
 
@@ -314,6 +315,7 @@ section.header-navbar {
 
 			.nav-plus-hide {
 				visibility: hidden;
+				opacity: 1;
 			}
 
 		}

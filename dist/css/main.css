@@ -1259,7 +1259,8 @@ section.header-navbar {
         section.header-navbar nav ul .navbar-plus:hover {
           background: #E55126; }
       section.header-navbar nav ul .nav-plus-hide {
-        visibility: hidden; }
+        visibility: hidden;
+        opacity: 1; }
     section.header-navbar nav .ul-rotate {
       -webkit-transform: rotateZ(90deg) translate(15px, -550px);
       transform: rotateZ(90deg) translate(15px, -550px); }
@@ -2136,6 +2137,10 @@ section.contact .contact-container {
     opacity: 1; }
 
 @media screen and (max-width: 1024px) {
+  section.header-navbar header .header-buttons a {
+    width: 115px;
+    padding: 8px 10px;
+    font-size: 90%; }
   section.header-navbar nav ul li {
     width: 75px;
     height: 75px; }
@@ -2200,7 +2205,7 @@ section.contact .contact-container {
     .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .port-mask-image p {
       font-size: 80%; }
   .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .button-switch a.close-port {
-    top: 15px; }
+    top: 25px; }
   .slide-container .cube-mask section.contact .contact-container .contact-left-side form #contact-message {
     width: 400px; }
   .slide-container .cube-mask section.contact .contact-container .contact-right-side:before {
@@ -2475,12 +2480,19 @@ section.contact .contact-container {
     body .site-wrapper .slide-container footer .footer-up {
       top: 16px; }
       body .site-wrapper .slide-container footer .footer-up .phone-and-mail a {
-        line-height: 22px; }
+        line-height: 22px;
+        font-size: 75%; }
     body .site-wrapper .slide-container .cube-mask section.what-i-do .what-i-do-container .what-i-do-images .image-mask {
+      right: 3%;
+      width: 200px;
+      height: 200px;
       margin: 0px -60px; }
       body .site-wrapper .slide-container .cube-mask section.what-i-do .what-i-do-container .what-i-do-images .image-mask:hover img {
         -webkit-transform: translateY(0px) rotateX(0deg);
         transform: translateY(0px) rotateX(0deg); } }
+@media screen and (min-height: 810px) {
+  .navbar-plus {
+    visibility: hidden; } }
 @media screen and (max-height: 500px) {
   section.header-navbar header {
     background: none; } }

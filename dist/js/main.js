@@ -62,6 +62,8 @@ function wrapperScroll(scroll, speed) {
 	}, speed);
 }
 
+
+
 // -------------------------------- //
 
 // HEADER AND NAVBAR
@@ -550,6 +552,9 @@ beeCont.find('div').click(function() {
 			intervalImage+=1.5;
 		}, 2500);
 	}, 19000);
+	setTimeout(function() {
+		headerText.removeClass('shiver-header-text');
+	}, 22000);
 });
 
 // -------------------------------- //
@@ -918,11 +923,11 @@ siteWrapper.scroll(function() {
 	var thisPosition = $(this).scrollTop(),
 		smallWin = 775;
 
-	if (thisPosition > winHeight / 2) {
-		header.css({
-			'background-position': '5%' + (thisPosition / 8) + '%'
-		});	
-	}
+	// if (thisPosition > winHeight / 2) {
+	// 	header.css({
+	// 		'background-position': '5%' + (thisPosition / 8) + '%'
+	// 	});	
+	// }
 	if (activeHbutton.hasClass('active-h-button')) {
 		if (thisPosition < 750) {
 			aboutMe.css({
