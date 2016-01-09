@@ -39,8 +39,9 @@ navbarLi.click(function(event) {
 		dataSec = $(this).data('section');
 
 		if (dataSec === 'svg') {
-			e = win.offset().top;
+			cv = win.offset().top;
 		}
+		upButton.hide();
 	setTimeout(function() {
 		cv = slideContainer.offset().top;
 		changeView(cv);
@@ -85,6 +86,7 @@ navbarLi.click(function(event) {
 		win.scroll(function() {
 	        win.scrollTop() < scrollPoint ? win.scrollTop(scrollPoint) : ''; /*????*/
 	    }).scroll();
+	    upButton.show();
 	}, 2000);
 
 // Target Section
@@ -134,13 +136,13 @@ navbarLi.click(function(event) {
 
 // Back To Top (click)
 
-var backToTop = $('.rot-2');
-
-backToTop.click(function(event) {
+upButton.click(function(event) {
 	var thisLi = navbarLi;
 
 	cv = headerNavbar.offset().top;
-	changeView(cv);
+	setTimeout(function() {
+		changeView(cv);
+	}, 200);
 	setTimeout(function() {
 		navbar.removeClass('ul-rotate');
 		upButton.removeClass('up-visible');
