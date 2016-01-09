@@ -185,7 +185,6 @@ section.what-i-do {
 				}
 
 				&:hover {
-					// animation: background-show 1s;
 
 					a {
 						opacity: 1;
@@ -248,14 +247,12 @@ section.what-i-do {
 				visibility: hidden;
 
 				&:after {
-					// transform: translateY(150px);
 					visibility: hidden;
 				}
 			}
 
 			.text-on {
 				opacity: 0;
-				// visibility: hidden;
 			}
 		}
 

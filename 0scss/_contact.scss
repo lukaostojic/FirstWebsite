@@ -127,7 +127,7 @@ section.contact {
 						font-size: 1.8em;
 						text-align: center;
 						color: white;
-						transition: all 0.75s;
+						transition: transform 0.75s, opacity 1.5s;
 					}
 
 					[data-more="phone"]:after,
@@ -141,7 +141,7 @@ section.contact {
 						line-height: 31px;
 						padding: 0 10px;
 						height: 30px;
-						background: $green;
+						background: $blue;
 						border-radius: 0 3px 3px 0;
 						visibility: hidden;
 						opacity: 0;
@@ -171,8 +171,7 @@ section.contact {
 				a:hover {
 
 					i {
-						background: $green;
-						// transform: rotateX(360deg);
+						transform: rotateZ(360deg) rotateX(360deg);
 
 						&:after {
 							visibility: visible;
@@ -184,8 +183,8 @@ section.contact {
 
 				.contact-right-icons {
 					position: relative;
-					left: -10px;
-					top: 200px;
+					left: -12px;
+					top: 221px;
 					display: flex;
 					flex-direction: row;
 
@@ -214,8 +213,7 @@ section.contact {
 						cursor: pointer;
 
 						i {
-							// border-radius: 3px;
-							transform: scale(0.75);
+							transform: rotateZ(360deg) rotateX(360deg);
 						}
 					}
 				}

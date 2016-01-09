@@ -135,6 +135,7 @@
 			section.references {
 
 				.references-container {
+					background-image: none;
 
 					.references-image-container {
 
@@ -172,6 +173,18 @@
 								}
 							}
 
+							.image-1-left {
+								animation: none;
+							}
+
+							.image-2-left {
+								animation: none;
+							}
+
+							.image-resize {
+								animation: none;
+							}
+
 							.button-switch {
 
 								a.close-port {
@@ -202,13 +215,13 @@
 					.contact-right-side {
 						
 						&:before {
-							width: 0px;
-							height: 0px;
+							width: 350px;
+							height: 350px;
 						}
 
 						.contact-more-info {
-							top: 120px;
-							left: -30px;
+							top: -30px;
+							left: -70px;
 
 							a {
 
@@ -227,23 +240,30 @@
 
 							#mail {
 								position: relative;
-								left: 0px;
+								left: -25px;
 							}
 
 							.contact-right-icons {
 								position: relative;
-								left: -37px;
-								top: 40px;
+								left: -60px;
+								top: 45px;
 
-								a {
+								#codepen {
+									position: relative;
+									top: 16px;
+									left: -33px;
+								}
 
-									i {
-										width: 50px;
-										height: 50px;
-										line-height: 50px;
-										font-size: 1.1em;
-										text-align: center;
-									}
+								#linkedin {
+									position: relative;
+									top: 61px;
+									left: -74px;
+								}
+
+								#soundcloud {
+									position: relative;
+									top: 123px;
+									left: -102px;
 								}
 
 								a:hover {
@@ -291,7 +311,6 @@
 						}
 
 						a.hidden-header-button {
-							// display: block;
 							width: 100px;
 							height: 38px;
 							font-size: 80%;
@@ -377,11 +396,6 @@
 								position: relative;
 								color: white;
 								line-height: 22px;
-
-								i {
-									// position: absolute;
-									// right: 10px;
-								}
 							}
 						}
 
@@ -412,7 +426,6 @@
 					.sections {
 						position: absolute;
 						top: 50px;
-						// border-bottom: 1px solid $red;
 						border-radius: 3%;
 						box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.75);
 						background: rgba(256,256,256,0.5);
@@ -437,7 +450,6 @@
 									}
 
 									.border-animation-minus {
-										// width: 100%;
 
 										&:after {
 											width: 0px;
@@ -445,7 +457,6 @@
 									}
 
 									.border-animation-plus {
-										// width: 100%;
 
 										&:after {
 											width: 0px;
@@ -463,7 +474,6 @@
 // What I Do --------------------------------------------------------------------
 
 					section.what-i-do {
-						// background: rgba(0,0,0,0.5);
 						position: relative;
 						transform: translateZ(0px) rotateY(0deg) scale(1);
 
@@ -541,7 +551,6 @@
 										margin: 10px;
 										padding: 0 10px;
 										box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
-										// background-attachment: fixed;
 
 										a.button {
 											width: 120px;
@@ -590,7 +599,6 @@
 // Contact --------------------------------------------------------------------
 
 					section.contact {
-						// background: rgba(0,0,0,0.5);
 						position: relative;
 						transform: translateX(0px) translateY(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);
 
@@ -642,11 +650,6 @@
 					a {
 						line-height: 22px;
 						font-size: 75%;
-
-						i {
-							// position: absolute;
-							// right: 10px;
-						}
 					}
 				}
 			}

@@ -1,5 +1,4 @@
 section.references {
-	// background-image: url('../img/references/cover.svg');
 	background-size: 135%;
 	background-position: 0% -15%;
 	background-repeat: no-repeat;
@@ -13,13 +12,10 @@ section.references {
 		background-image: url('../img/portfolio/port4.png');
 		background-repeat: no-repeat;
 		background-position: 50% 60%;
-		// background-attachment: fixed;
 
 		.references-text {
 			@include flex-center;
 			flex-direction: column;
-			// border-top: 2px solid $white-ish;
-			// border-radius: 100%;
 			transition: all 0.5s;
 
 			h2 {
@@ -45,14 +41,11 @@ section.references {
 				position: relative;
 				@include flex-center;
 				flex-direction: column;
-				// margin-left: 15px;
 
 				span {
 					position: absolute;
 				    top: 50%;
 				    padding: 10px 20px;
-				    // background: $green;
-				    // text-decoration: underline;
 				    border-radius: 3px;
 				    color: $green;
 				    font-size: 1.2em;
@@ -63,7 +56,6 @@ section.references {
 				    	width: 50px;
 				    	height: 50px;
 				    	border-radius: 100%;
-				    	// background: $green;
 				    	border: 2px $green;
 				    	border-style: dotted dotted solid solid;
 				    	position: relative;
@@ -103,7 +95,6 @@ section.references {
 						width: 150%;
 						visibility: hidden;
 						padding: 2px 5px;
-						// background-color: rgba(256,256,256,0.8);
 						color: $text-color;
 						transform: translateX(-2000px);
 						transition: all 0.5s;
@@ -119,7 +110,6 @@ section.references {
 					}
 
 					p {
-						// background-image: url('../img/header/noise.png');
 						bottom: 5px;
 					}
 
@@ -157,14 +147,12 @@ section.references {
 					width: 320px;
 					height: 320px;
 					border-radius: 100%;
-					// border-right: 5px dotted $green;
 					@include flex-center;
 					flex-direction: column;
 					background-size: cover;
 					background-position: 50% 50%;
 					background-repeat: repeat-x;
 					z-index: 1;
-					// background-attachment: fixed;
 					opacity: 0.98;
 					box-shadow: 0px 20px 15px 0px rgba(0,0,0,0.75);
 					transition:
@@ -183,7 +171,6 @@ section.references {
 					    width: 320px;
 					    height: 320px;
 					    border-bottom: 5px solid $green;
-					    // border-left: 5px solid $green;
 					    border-radius: 100%;
 					    z-index: -1;
 					    opacity: 0.6;
@@ -222,13 +209,11 @@ section.references {
 					}
 
 					.site-2-buttons.close-port {
-						// top: 40px;
 					}
 
 					p {
 						text-align: center;
 						padding: 5px 15px;
-						// background: $blue;
 						color: white;
 						border-radius: 3px;
 						opacity: 0;
@@ -241,7 +226,6 @@ section.references {
 					background-image: url('../img/portfolio/proba1.jpg');
 
 					&:before, &:after {
-						// border-bottom: 5px solid $red;
 					    border-left: 5px solid $red;
 					}
 				}
@@ -251,7 +235,6 @@ section.references {
 					background-position: -500px 50%;
 
 					&:before, &:after {
-						// border-bottom: 5px solid $blue;
 					    border-left: 5px solid $blue;
 					}
 				}
@@ -260,7 +243,6 @@ section.references {
 					background-image: url('../img/portfolio/proba3.jpg');
 
 					&:before, &:after {
-						// border-bottom: 5px solid $orange;
 					    border-left: 5px solid $orange;
 					}
 				}
@@ -316,8 +298,7 @@ section.references {
 				.image-3-left {
 					left: -20%;
 					animation: image-3-left 1.5s;
-					// box-shadow: inset -30px 0px 5px 10px rgba(0,0,0,0.75);
-
+					
 					&:before {
 						transform: rotateY(540deg) scale(1.5);
 						top: -5px;

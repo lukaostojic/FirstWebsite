@@ -2069,7 +2069,8 @@ section.contact .contact-container {
           font-size: 1.8em;
           text-align: center;
           color: white;
-          transition: all 0.75s; }
+          transition: -webkit-transform 0.75s, opacity 1.5s;
+          transition: transform 0.75s, opacity 1.5s; }
         section.contact .contact-container .contact-right-side .contact-more-info a [data-more="phone"]:after,
         section.contact .contact-container .contact-right-side .contact-more-info a [data-more="mail"]:after {
           position: absolute;
@@ -2081,7 +2082,7 @@ section.contact .contact-container {
           line-height: 31px;
           padding: 0 10px;
           height: 30px;
-          background: #109F94;
+          background: #0C73B8;
           border-radius: 0 3px 3px 0;
           visibility: hidden;
           opacity: 0;
@@ -2101,7 +2102,8 @@ section.contact .contact-container {
         position: relative;
         left: -75px; }
       section.contact .contact-container .contact-right-side .contact-more-info a:hover i {
-        background: #109F94; }
+        -webkit-transform: rotateZ(360deg) rotateX(360deg);
+        transform: rotateZ(360deg) rotateX(360deg); }
         section.contact .contact-container .contact-right-side .contact-more-info a:hover i:after {
           visibility: visible;
           opacity: 1;
@@ -2110,8 +2112,8 @@ section.contact .contact-container {
           transform: translateX(0px); }
       section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons {
         position: relative;
-        left: -10px;
-        top: 200px;
+        left: -12px;
+        top: 221px;
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
@@ -2137,9 +2139,8 @@ section.contact .contact-container {
         section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons a:hover {
           cursor: pointer; }
           section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons a:hover i {
-            -webkit-transform: scale(0.75);
-            -ms-transform: scale(0.75);
-            transform: scale(0.75); }
+            -webkit-transform: rotateZ(360deg) rotateX(360deg);
+            transform: rotateZ(360deg) rotateX(360deg); }
   section.contact .contact-container .right-side-show {
     opacity: 1; }
 
@@ -2193,36 +2194,47 @@ section.contact .contact-container {
         width: 200px; }
   .slide-container .cube-mask section.what-i-do .what-i-do-container .other-tools {
     bottom: 60px; }
-  .slide-container .cube-mask section.references .references-container .references-image-container .port-mask span {
-    font-size: 95%; }
-  .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .port-mask-image {
-    width: 250px;
-    height: 250px; }
-    .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .port-mask-image:before, .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .port-mask-image:after {
+  .slide-container .cube-mask section.references .references-container {
+    background-image: none; }
+    .slide-container .cube-mask section.references .references-container .references-image-container .port-mask span {
+      font-size: 95%; }
+    .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .port-mask-image {
       width: 250px;
       height: 250px; }
-    .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .port-mask-image a.button {
-      width: 75px;
-      height: 75px;
-      line-height: 55px;
-      bottom: -30px; }
-    .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .port-mask-image a.close-port {
-      width: 75px;
-      height: 75px;
-      line-height: 75px;
+      .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .port-mask-image:before, .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .port-mask-image:after {
+        width: 250px;
+        height: 250px; }
+      .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .port-mask-image a.button {
+        width: 75px;
+        height: 75px;
+        line-height: 55px;
+        bottom: -30px; }
+      .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .port-mask-image a.close-port {
+        width: 75px;
+        height: 75px;
+        line-height: 75px;
+        top: 25px; }
+      .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .port-mask-image p {
+        font-size: 80%; }
+    .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .image-1-left {
+      -webkit-animation: none;
+      animation: none; }
+    .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .image-2-left {
+      -webkit-animation: none;
+      animation: none; }
+    .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .image-resize {
+      -webkit-animation: none;
+      animation: none; }
+    .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .button-switch a.close-port {
       top: 25px; }
-    .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .port-mask-image p {
-      font-size: 80%; }
-  .slide-container .cube-mask section.references .references-container .references-image-container .port-mask .button-switch a.close-port {
-    top: 25px; }
   .slide-container .cube-mask section.contact .contact-container .contact-left-side form #contact-message {
     width: 400px; }
   .slide-container .cube-mask section.contact .contact-container .contact-right-side:before {
-    width: 0px;
-    height: 0px; }
+    width: 350px;
+    height: 350px; }
   .slide-container .cube-mask section.contact .contact-container .contact-right-side .contact-more-info {
-    top: 120px;
-    left: -30px; }
+    top: -30px;
+    left: -70px; }
     .slide-container .cube-mask section.contact .contact-container .contact-right-side .contact-more-info a i {
       width: 50px;
       height: 50px;
@@ -2233,17 +2245,23 @@ section.contact .contact-container {
       left: 0px; }
     .slide-container .cube-mask section.contact .contact-container .contact-right-side .contact-more-info #mail {
       position: relative;
-      left: 0px; }
+      left: -25px; }
     .slide-container .cube-mask section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons {
       position: relative;
-      left: -37px;
-      top: 40px; }
-      .slide-container .cube-mask section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons a i {
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-        font-size: 1.1em;
-        text-align: center; }
+      left: -60px;
+      top: 45px; }
+      .slide-container .cube-mask section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons #codepen {
+        position: relative;
+        top: 16px;
+        left: -33px; }
+      .slide-container .cube-mask section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons #linkedin {
+        position: relative;
+        top: 61px;
+        left: -74px; }
+      .slide-container .cube-mask section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons #soundcloud {
+        position: relative;
+        top: 123px;
+        left: -102px; }
       .slide-container .cube-mask section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons a:hover i {
         border-radius: 100%; } }
 @media screen and (max-width: 775px) {

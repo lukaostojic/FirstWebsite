@@ -67,7 +67,6 @@ beeCont.find('div').click(function() {
 		header.css({
 			'background-position': '-1% 50%'
 		});
-		// audio.play();
 	}, 1000);
 	setTimeout(function() {
 		header.find('.header-buttons').find('a').css({
