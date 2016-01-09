@@ -19,7 +19,7 @@ jebise.click(function(event) {
 
 // Action (click)
 
-imageMask.click(function(event) {
+function imageClick() {
 	var thisMask = $(this),
 		dataTech = thisMask.data('tech'),
 		thisImage = thisMask.find('img'),
@@ -53,7 +53,43 @@ imageMask.click(function(event) {
 		}, 350);
 	}
 	event.preventDefault();
-});
+}
+
+imageMask.on('click', imageClick);
+	// var thisMask = $(this),
+	// 	dataTech = thisMask.data('tech'),
+	// 	thisImage = thisMask.find('img'),
+	// 	thisReadMore = thisMask.find('a'),
+	// 	maskChildren = thisMask.siblings('.image-mask'),
+	// 	thisText = thisMask.find('.hidden-tech');
+
+	// if (winWidth >= 775) {
+	// 	thisMask.addClass('mask-on');
+	// 	thisReadMore.addClass('after-before-remove');
+	// 	setTimeout(function() {
+	// 		thisImage.addClass('image-jump');
+	// 	}, 250);
+	// 	setTimeout(function() {
+	// 		thisImage.removeClass('image-jump');
+	// 		thisReadMore.removeClass('after-before-remove');
+	// 	}, 800);
+	// 	thisReadMore.css({
+	// 		visibility: 'hidden'
+	// 	});
+	// 	maskChildren.removeClass('mask-on');
+	// 	maskChildren.find('a').css({
+	// 		visibility: 'visible'
+	// 	});
+	// 	maskChildren.find('.hidden-tech').removeClass('show-tech');
+	// 	setTimeout(function() {
+	// 		thisText.addClass('show-tech');
+	// 		showAll
+	// 		.show()
+	// 		.addClass('see-all-boop');
+	// 	}, 350);
+	// }
+	// event.preventDefault();
+
 
 // Show All (click)
 
@@ -70,6 +106,7 @@ function handler(e) {
 		image.css({
 			opacity: '1'
 		});
+		imageMask.on('click', imageClick);
 	} else {
 		imageMask.addClass('mask-on');
 		hiddenContent.addClass('show-tech');
@@ -79,6 +116,7 @@ function handler(e) {
 		image.css({
 			opacity: '0'
 		});
+		imageMask.off('click', imageClick);
 	}
 	first = !first;
 	e.preventDefault();

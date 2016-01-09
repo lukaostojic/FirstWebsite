@@ -1178,9 +1178,7 @@ section.header-navbar {
         -webkit-transform: rotateZ(90deg) translate(300px, -325px);
         transform: rotateZ(90deg) translate(300px, -325px); }
       section.header-navbar nav ul .li-hover {
-        -webkit-transform: translateX(-20px);
-        -ms-transform: translateX(-20px);
-        transform: translateX(-20px);
+        margin-left: -40px;
         box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
         -webkit-perspective: 100px;
         perspective: 100px; }
@@ -1567,25 +1565,22 @@ section.what-i-do .what-i-do-container {
         -webkit-transform: translateY(-150px);
         -ms-transform: translateY(-150px);
         transform: translateY(-150px); }
-      section.what-i-do .what-i-do-container .what-i-do-images .image-mask:hover {
-        -webkit-animation: background-show 1s;
-        animation: background-show 1s; }
-        section.what-i-do .what-i-do-container .what-i-do-images .image-mask:hover a {
-          opacity: 1;
-          -webkit-transform: translateY(-100px);
-          -ms-transform: translateY(-100px);
-          transform: translateY(-100px); }
-        section.what-i-do .what-i-do-container .what-i-do-images .image-mask:hover a:after, section.what-i-do .what-i-do-container .what-i-do-images .image-mask:hover a:before {
-          -webkit-transform: translateX(0px);
-          -ms-transform: translateX(0px);
-          transform: translateX(0px); }
-        section.what-i-do .what-i-do-container .what-i-do-images .image-mask:hover:after {
-          -webkit-transform: translateY(50px);
-          -ms-transform: translateY(50px);
-          transform: translateY(50px); }
-        section.what-i-do .what-i-do-container .what-i-do-images .image-mask:hover img {
-          -webkit-transform: translateY(50px) rotateX(45deg);
-          transform: translateY(50px) rotateX(45deg); }
+      section.what-i-do .what-i-do-container .what-i-do-images .image-mask:hover a {
+        opacity: 1;
+        -webkit-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+        transform: translateY(-100px); }
+      section.what-i-do .what-i-do-container .what-i-do-images .image-mask:hover a:after, section.what-i-do .what-i-do-container .what-i-do-images .image-mask:hover a:before {
+        -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        transform: translateX(0px); }
+      section.what-i-do .what-i-do-container .what-i-do-images .image-mask:hover:after {
+        -webkit-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+        transform: translateY(50px); }
+      section.what-i-do .what-i-do-container .what-i-do-images .image-mask:hover img {
+        -webkit-transform: translateY(50px) rotateX(45deg);
+        transform: translateY(50px) rotateX(45deg); }
     section.what-i-do .what-i-do-container .what-i-do-images [data-tech="html"] a:after {
       content: "<"; }
     section.what-i-do .what-i-do-container .what-i-do-images [data-tech="html"] a:before {
@@ -2096,7 +2091,7 @@ section.contact .contact-container {
           transition: opacity 0.75s, -webkit-transform 0.3s;
           transition: opacity 0.75s, transform 0.3s; }
         section.contact .contact-container .contact-right-side .contact-more-info a [data-more="phone"]:after {
-          content: '+381654205149'; }
+          content: '+381_65_420_5149'; }
         section.contact .contact-container .contact-right-side .contact-more-info a [data-more="mail"]:after {
           content: 'luka4ostojic4@gmail.com'; }
       section.contact .contact-container .contact-right-side .contact-more-info #phone {
@@ -2106,9 +2101,7 @@ section.contact .contact-container {
         position: relative;
         left: -75px; }
       section.contact .contact-container .contact-right-side .contact-more-info a:hover i {
-        background: #109F94;
-        -webkit-transform: rotateX(360deg);
-        transform: rotateX(360deg); }
+        background: #109F94; }
         section.contact .contact-container .contact-right-side .contact-more-info a:hover i:after {
           visibility: visible;
           opacity: 1;
@@ -2144,7 +2137,6 @@ section.contact .contact-container {
         section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons a:hover {
           cursor: pointer; }
           section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons a:hover i {
-            border-radius: 3px;
             -webkit-transform: scale(0.75);
             -ms-transform: scale(0.75);
             transform: scale(0.75); }

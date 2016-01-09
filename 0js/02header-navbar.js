@@ -57,10 +57,6 @@ navbarLi.click(function(event) {
 		upButton.addClass('up-visible');
 	}, 600);
 	setTimeout(function() {
-		// scrollPoint = navbarLi.offset().top - 20;
-	    // win.scroll(function() {
-	    //     win.scrollTop() < scrollPoint ? win.scrollTop(scrollPoint) : ''; /*????*/
-	    // }).scroll();
 		body.addClass('body-overflow');
 		thisLi
 		.addClass('new-hover')
@@ -252,9 +248,9 @@ $(document).on('click', '.navbar-plus', function(event) {
 
 // Work In Progress (click)
 
-// $('.header-buttons').find('a').click(function(event) {
-// 	alert('Under Construction');
-// });
+$('.header-buttons').find('a').click(function(event) {
+	alert('Under Construction');
+});
 
 // New Navbar
 

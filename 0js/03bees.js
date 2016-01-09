@@ -7,7 +7,8 @@ var	beeOne = beeCont.find('.bee-1'),
 	beeThree = beeCont.find('.bee-3'),
 	beeFour = beeCont.find('.bee-4'),
 	headerText = $('.header-text'),
-	more = $('.more-bees').find('ul');
+	more = $('.more-bees').find('ul'),
+	backImage = 'url(../img/header/brlja5.svg)';
 function randomBee() {
 	var randomX = Math.floor((Math.random() * 350) + 1),
 		randomY = Math.floor((Math.random() * 450) + 1),
@@ -59,9 +60,7 @@ beeCont.find('div').click(function() {
 	headerNavbar.find('a').unbind('click');
 	setTimeout(function() {
 		header.css({
-			'background-image': 'url(../img/header/brlja5.svg)'
-			 // Promeniti u finalnoj verziji:
-			// 'background-image': 'url(../dist/img/header/brlja5.svg)' 
+			'background-image': backImage
 		});
 	}, 500);
 	setTimeout(function() {
@@ -101,11 +100,6 @@ beeCont.find('div').click(function() {
 						transform: 'translateX(' + Math.floor(Math.random() * (1200 - 2000)) + 'px) translateY(' + Math.floor(Math.random() * 850) + 'px)'
 					});
 				}, 50 * (i+1));
-				// setInterval(function() {
-				// 	moreLi.each(function(index, el) {
-				// 		moreLi.remove();
-				// 	});
-				// }, 10000);
 			});
 
 			setTimeout(function() {
@@ -123,9 +117,6 @@ beeCont.find('div').click(function() {
 		var secondInt = setInterval(function(i) {
 			randomBee();
 		}, 4250);
-		// header.find('.header-buttons').find('a').css({
-		// 	animation: 'header-buttons 5.5s infinite'
-		// });
 	}, 3000);
 
 // 7-10
@@ -169,10 +160,6 @@ beeCont.find('div').click(function() {
 		});
 	}, 10500);
 	setTimeout(function() {
-		// $('.header-buttons').css({
-		// 	transform: 'scale(0)'
-		// });
-		// siteWrapper.addClass('site-wrapper-bees');
 		$('.novo-div').css({
 			left: '-30%',
 			width: '200vh',
@@ -195,7 +182,6 @@ beeCont.find('div').click(function() {
 		setInterval(function() {
 			header.css({
 				'background-position': '-1%' + intervalImage + '%'
-				// 'background-size': intervalImage + '%'
 			});
 			intervalImage+=1.5;
 		}, 2500);

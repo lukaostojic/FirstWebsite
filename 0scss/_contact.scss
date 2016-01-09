@@ -150,7 +150,7 @@ section.contact {
 					}
 
 					[data-more="phone"]:after {
-						content: '+381654205149';
+						content: '+381_65_420_5149';
 					}
 
 					[data-more="mail"]:after {
@@ -172,7 +172,7 @@ section.contact {
 
 					i {
 						background: $green;
-						transform: rotateX(360deg);
+						// transform: rotateX(360deg);
 
 						&:after {
 							visibility: visible;
@@ -214,7 +214,7 @@ section.contact {
 						cursor: pointer;
 
 						i {
-							border-radius: 3px;
+							// border-radius: 3px;
 							transform: scale(0.75);
 						}
 					}
