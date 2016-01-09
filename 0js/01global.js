@@ -67,6 +67,5 @@ function wrapperScroll(scroll, speed) {
 
 // - srediti animaciju malo
 // - srediti malo tekstove
-// - NAPISATI ABAUT MI
 
 // -------------------------------- //

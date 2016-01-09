@@ -526,18 +526,3 @@
 		opacity: 0
 	}
 }
-
-
-@keyframes icon-rotate {
-	0% {
-		transform: rotateY(0deg);
-	}
-
-	50% {
-		transform: rotateY(0deg);
-	}
-
-	100% {
-		transform: rotateY(-360deg);
-	}
-}

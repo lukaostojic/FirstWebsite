@@ -846,26 +846,6 @@ ul {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
     opacity: 0; } }
-@-webkit-keyframes icon-rotate {
-  0% {
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg); }
-  50% {
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg); }
-  100% {
-    -webkit-transform: rotateY(-360deg);
-    transform: rotateY(-360deg); } }
-@keyframes icon-rotate {
-  0% {
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg); }
-  50% {
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg); }
-  100% {
-    -webkit-transform: rotateY(-360deg);
-    transform: rotateY(-360deg); } }
 section.bees {
   -webkit-perspective: 1500px;
   perspective: 1500px;
@@ -2142,6 +2122,7 @@ section.contact .contact-container {
           display: block;
           font-size: 1.8em;
           margin: 10px 15px;
+          background: transparent;
           transition: all 0.3s; }
           section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons a i {
             position: relative;
@@ -2157,8 +2138,8 @@ section.contact .contact-container {
         section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons a:hover {
           cursor: pointer; }
           section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons a:hover i {
-            -webkit-transform: rotateZ(360deg) rotateX(360deg) translateY(-100px);
-            transform: rotateZ(360deg) rotateX(360deg) translateY(-100px); }
+            -webkit-transform: rotateZ(360deg) rotateX(360deg) translateY(-100px) scale(1.2);
+            transform: rotateZ(360deg) rotateX(360deg) translateY(-100px) scale(1.2); }
   section.contact .contact-container .right-side-show {
     opacity: 1; }
 

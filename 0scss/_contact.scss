@@ -192,6 +192,7 @@ section.contact {
 						display: block;
 						font-size: 1.8em;
 						margin: 10px 15px;
+						background: transparent;
 						transition: all 0.3s;
 
 						i {
@@ -200,6 +201,7 @@ section.contact {
 							height: 75px;
 							border-radius: 100%;
 							line-height: 77px;
+							// box-shadow: 0px 20px 15px 0px rgba(0,0,0,0.75);
 							transition: border-radius 0.3s, transform 0.75s;
 						}
 					}
@@ -211,10 +213,9 @@ section.contact {
 
 					a:hover {
 						cursor: pointer;
-						// animation: icon-rotate 1.25s;
 
 						i {
-							transform: rotateZ(360deg) rotateX(360deg) translateY(-100px);
+							transform: rotateZ(360deg) rotateX(360deg) translateY(-100px) scale(1.2);
 						}
 					}
 				}
