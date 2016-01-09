@@ -65,7 +65,6 @@ function wrapperScroll(scroll, speed) {
 // - resiti skrol na fonu
 // - resiti risponsivnes
 
-// - srediti kod
 // - srediti animaciju malo
 // - srediti malo tekstove
 // - NAPISATI ABAUT MI

@@ -70,7 +70,6 @@ navbarLi.click(function(event) {
 		header.css({
 			'background-position': '-40% 50%'
 		});
-		navbar.find('.navbar-plus').show(150);
 		beeCont.css({
 			opacity: '0'
 		});
@@ -91,6 +90,12 @@ navbarLi.click(function(event) {
 
 // Target Section
 
+	function navPlus() {
+		setTimeout(function() {
+			navbar.find('.navbar-plus').show(150);
+		}, 1200);
+	}
+
 	if (dataSec === 'about-me') {
 		cubeMask.css({
 			transform: 'rotateY(0deg)',
@@ -100,6 +105,7 @@ navbarLi.click(function(event) {
 		body.css({
 			'background-size': '95%'
 		});
+		navPlus();
 	} else if (dataSec === 'what-i-do') {
 		cubeMask.css({
 			transform: 'rotateY(180deg)',
@@ -110,6 +116,7 @@ navbarLi.click(function(event) {
 		body.css({
 			'background-size': '95%'
 		});
+		navPlus();
 	} else if (dataSec === 'references') {
 		cubeMask.css({
 			transform: 'rotateX(-90deg)',
@@ -120,6 +127,7 @@ navbarLi.click(function(event) {
 		body.css({
 			'background-size': '95%'
 		});
+		navPlus();
 	} else if (dataSec === 'contact') {
 		cubeMask.css({
 			transform: 'rotateX(90deg) rotateZ(45deg)',
@@ -130,6 +138,9 @@ navbarLi.click(function(event) {
 		body.css({
 			// 'background-size': '65%'
 		});
+		setTimeout(function() {
+			navbar.find('.navbar-plus').hide(150);
+		}, 1200);
 	}
 	event.preventDefault();
 });
@@ -269,7 +280,7 @@ newNav.find('li').click(function() {
 
 	if (thisGoto === 'about') {
 		scroll = aboutMe.offset().top - 65;
-		speed = 400;
+		speed = 600;
 	} else if (thisGoto === 'what') {
 		scroll = whatIdo.offset().top - 65;
 		speed = 800;
@@ -278,7 +289,7 @@ newNav.find('li').click(function() {
 		speed = 1200;
 	} else if (thisGoto === 'contact') {
 		scroll = contact.offset().top - 65;
-		speed = 1600;
+		speed = 1400;
 	}
 	wrapperScroll(scroll, speed);
 });
