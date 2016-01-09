@@ -199,6 +199,11 @@ dragger
 	dragger.removeClass('mouse-active');
 });
 
+dragger.mouseenter(function(event) {
+	cv = navbarLi.offset().top - 20;
+	changeView(cv);
+});
+
 svgContainer.mousemove(function(e) {
 	var mouseX = e.clientX - 690,
 		mouseY = e.clientY - 305;

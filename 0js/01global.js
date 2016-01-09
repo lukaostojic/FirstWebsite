@@ -62,6 +62,14 @@ function wrapperScroll(scroll, speed) {
 	}, speed);
 }
 
+// - resiti skrol na fonu
+// - resiti portfolio kad je smanjen
+// - resiti risponsivnes
 
+// - srediti kod
+// - srediti animaciju malo
+// - srediti kontakt malo
+// - srediti malo tekstove
+// - NAPISATI ABAUT MI
 
 // -------------------------------- //
