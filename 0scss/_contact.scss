@@ -171,7 +171,7 @@ section.contact {
 				a:hover {
 
 					i {
-						transform: rotateZ(360deg) rotateX(360deg);
+						transform: rotateZ(360deg) rotateX(360deg) translateX(50px);
 
 						&:after {
 							visibility: visible;
@@ -191,7 +191,7 @@ section.contact {
 					a {
 						display: block;
 						font-size: 1.8em;
-						margin: 0 15px;
+						margin: 10px 15px;
 						transition: all 0.3s;
 
 						i {
@@ -202,18 +202,19 @@ section.contact {
 							line-height: 77px;
 							transition: border-radius 0.3s, transform 0.75s;
 						}
+					}
 
-						.fa-github,
-						.fa-soundcloud {
-							bottom: 40px;
-						}
+					#github,
+					#soundcloud {
+						bottom: 40px;
 					}
 
 					a:hover {
 						cursor: pointer;
+						// animation: icon-rotate 1.25s;
 
 						i {
-							transform: rotateZ(360deg) rotateX(360deg);
+							transform: rotateZ(360deg) rotateX(360deg) translateY(-100px);
 						}
 					}
 				}

@@ -846,6 +846,26 @@ ul {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
     opacity: 0; } }
+@-webkit-keyframes icon-rotate {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg); }
+  50% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg); }
+  100% {
+    -webkit-transform: rotateY(-360deg);
+    transform: rotateY(-360deg); } }
+@keyframes icon-rotate {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg); }
+  50% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg); }
+  100% {
+    -webkit-transform: rotateY(-360deg);
+    transform: rotateY(-360deg); } }
 section.bees {
   -webkit-perspective: 1500px;
   perspective: 1500px;
@@ -1201,13 +1221,11 @@ section.header-navbar {
         section.header-navbar nav ul .li-hover:nth-child(4):after {
           content: 'Contact'; }
       section.header-navbar nav ul .li-active {
-        background: #01876A;
-        background: #E5A228; }
+        background: #01876A; }
       section.header-navbar nav ul .new-hover {
         border-left: 2px solid white; }
         section.header-navbar nav ul .new-hover:hover {
-          background: #01876A;
-          background: #E5A228; }
+          background: #01876A; }
       section.header-navbar nav ul .navbar-plus {
         position: absolute;
         left: 0px;
@@ -2102,8 +2120,8 @@ section.contact .contact-container {
         position: relative;
         left: -75px; }
       section.contact .contact-container .contact-right-side .contact-more-info a:hover i {
-        -webkit-transform: rotateZ(360deg) rotateX(360deg);
-        transform: rotateZ(360deg) rotateX(360deg); }
+        -webkit-transform: rotateZ(360deg) rotateX(360deg) translateX(50px);
+        transform: rotateZ(360deg) rotateX(360deg) translateX(50px); }
         section.contact .contact-container .contact-right-side .contact-more-info a:hover i:after {
           visibility: visible;
           opacity: 1;
@@ -2123,7 +2141,7 @@ section.contact .contact-container {
         section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons a {
           display: block;
           font-size: 1.8em;
-          margin: 0 15px;
+          margin: 10px 15px;
           transition: all 0.3s; }
           section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons a i {
             position: relative;
@@ -2133,14 +2151,14 @@ section.contact .contact-container {
             line-height: 77px;
             transition: border-radius 0.3s, -webkit-transform 0.75s;
             transition: border-radius 0.3s, transform 0.75s; }
-          section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons a .fa-github,
-          section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons a .fa-soundcloud {
-            bottom: 40px; }
+        section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons #github,
+        section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons #soundcloud {
+          bottom: 40px; }
         section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons a:hover {
           cursor: pointer; }
           section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons a:hover i {
-            -webkit-transform: rotateZ(360deg) rotateX(360deg);
-            transform: rotateZ(360deg) rotateX(360deg); }
+            -webkit-transform: rotateZ(360deg) rotateX(360deg) translateY(-100px);
+            transform: rotateZ(360deg) rotateX(360deg) translateY(-100px); }
   section.contact .contact-container .right-side-show {
     opacity: 1; }
 
@@ -2251,7 +2269,7 @@ section.contact .contact-container {
       .slide-container .cube-mask section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons {
         position: relative;
         left: -60px;
-        top: 45px; }
+        top: 35px; }
         .slide-container .cube-mask section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons #codepen {
           position: relative;
           top: 16px;
@@ -2262,10 +2280,12 @@ section.contact .contact-container {
           left: -74px; }
         .slide-container .cube-mask section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons #soundcloud {
           position: relative;
-          top: 123px;
+          top: 80px;
           left: -102px; }
         .slide-container .cube-mask section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons a:hover i {
-          border-radius: 100%; } }
+          border-radius: 100%;
+          -webkit-transform: rotateZ(0deg) rotateX(0deg) translateY(0px) scale(0.75);
+          transform: rotateZ(0deg) rotateX(0deg) translateY(0px) scale(0.75); } }
 @media screen and (max-width: 775px) {
   body {
     overflow: visible;

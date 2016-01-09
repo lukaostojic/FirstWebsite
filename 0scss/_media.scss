@@ -247,7 +247,7 @@
 							.contact-right-icons {
 								position: relative;
 								left: -60px;
-								top: 45px;
+								top: 35px;
 
 								#codepen {
 									position: relative;
@@ -263,7 +263,7 @@
 
 								#soundcloud {
 									position: relative;
-									top: 123px;
+									top: 80px;
 									left: -102px;
 								}
 
@@ -271,6 +271,7 @@
 
 									i {
 										border-radius: 100%;
+										transform: rotateZ(0deg) rotateX(0deg) translateY(0px) scale(0.75);
 									}
 								}
 							}
