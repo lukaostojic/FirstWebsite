@@ -2319,10 +2319,10 @@ section.contact .contact-container {
         height: 50px;
         line-height: 50px;
         font-size: 1.2em; }
-      .slide-container .cube-mask section.contact .contact-container .contact-right-side .contact-more-info #phone {
+      .slide-container .cube-mask section.contact .contact-container .contact-right-side .contact-more-info .phone {
         position: relative;
-        left: 0px; }
-      .slide-container .cube-mask section.contact .contact-container .contact-right-side .contact-more-info #mail {
+        left: -5px; }
+      .slide-container .cube-mask section.contact .contact-container .contact-right-side .contact-more-info .mail {
         position: relative;
         left: -25px; }
       .slide-container .cube-mask section.contact .contact-container .contact-right-side .contact-more-info .contact-right-icons {

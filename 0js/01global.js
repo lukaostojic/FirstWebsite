@@ -64,7 +64,7 @@ function wrapperScroll(scroll, speed) {
 
 // Contact hrefs prevent
 
-$('.phone-and-mail').click(function(event) {
+$('.phone, .mail').click(function(event) {
 	return false;
 });
 
