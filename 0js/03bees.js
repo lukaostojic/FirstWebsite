@@ -8,7 +8,7 @@ var	beeOne = beeCont.find('.bee-1'),
 	beeFour = beeCont.find('.bee-4'),
 	headerText = $('.header-text'),
 	more = $('.more-bees').find('ul'),
-	backImage = 'url(../img/header/brlja5.svg)';
+	backImage = 'url(../dist/img/header/brlja5.svg)';
 function randomBee() {
 	var randomX = Math.floor((Math.random() * 350) + 1),
 		randomY = Math.floor((Math.random() * 450) + 1),

@@ -278,19 +278,39 @@ newNav.find('li').click(function() {
 	var thisLi = $(this),
 		thisGoto = thisLi.data('go');
 
-	if (thisGoto === 'about') {
-		scroll = aboutMe.offset().top - 65;
-		speed = 600;
-	} else if (thisGoto === 'what') {
-		scroll = whatIdo.offset().top - 65;
-		speed = 800;
-	} else if (thisGoto === 'port') {
-		scroll = references.offset().top - 65;
-		speed = 1200;
-	} else if (thisGoto === 'contact') {
-		scroll = contact.offset().top - 65;
-		speed = 1400;
-	}
+	// if (winWidth <= 450) {
+	// 	if (thisGoto === 'about') {
+	// 		cv = aboutMe.offset().top - 65;
+	// 		speed = 600;
+	// 	} else if (thisGoto === 'what') {
+	// 		cv = whatIdo.offset().top - 65;
+	// 		speed = 800;
+	// 	} else if (thisGoto === 'port') {
+	// 		cv = references.offset().top - 65;
+	// 		speed = 1200;
+	// 	} else if (thisGoto === 'contact') {
+	// 		cv = contact.offset().top - 65;
+	// 		speed = 1400;
+	// 	}
+	// }
+
+	
+	  // if (winWidth > 100) {
+		if (thisGoto === 'about') {
+			scroll = 655;
+			speed = 600;
+		} else if (thisGoto === 'what') {
+			scroll = 1460;
+			speed = 800;
+		} else if (thisGoto === 'port') {
+			scroll = 2295;
+			speed = 1200;
+		} else if (thisGoto === 'contact') {
+			scroll = 3295;
+			speed = 1400;
+		}
+	// }
+	// changeView(cv);
 	wrapperScroll(scroll, speed);
 });
 

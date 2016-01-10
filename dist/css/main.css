@@ -1343,6 +1343,8 @@ section.about-me .about-me-container {
         background: rgba(255, 255, 255, 0.4); }
     section.about-me .about-me-container .about-me-text .three a.slide-para {
       margin: -10px 0; }
+      section.about-me .about-me-container .about-me-text .three a.slide-para:after {
+        border-bottom: none; }
       section.about-me .about-me-container .about-me-text .three a.slide-para p span {
         color: #109F94;
         font-weight: bold; }

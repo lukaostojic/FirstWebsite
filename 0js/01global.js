@@ -62,7 +62,6 @@ function wrapperScroll(scroll, speed) {
 	}, speed);
 }
 
-// - resiti skrol na fonu
 // - resiti risponsivnes
 
 // - srediti animaciju malo

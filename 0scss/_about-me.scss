@@ -88,6 +88,10 @@ section.about-me {
 				a.slide-para {
 					margin: -10px 0;
 
+					&:after {
+						border-bottom: none;
+					}
+
 					p {
 
 						span {
