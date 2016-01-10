@@ -85,7 +85,7 @@ beeCont.find('div').click(function() {
 
 	setTimeout(function() {
 		var firstInt = setInterval(function() {
-			more.append('<li class="ajmo"><a href="#"></a></li>');
+			more.append('<li class="more-bees"><a href="#"></a></li>');
 			var moreLiOdd = more.find('li:odd'),
 				moreLiEven = more.find('li:even'),
 				moreLi = more.find('li');

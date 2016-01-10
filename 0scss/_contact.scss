@@ -54,7 +54,7 @@ section.contact {
 				}
 
 				#contact-message {
-					width: 550px;
+					width: 500px;
 					padding: 5px 0;
 					top: 45px;
 					resize: none;
@@ -81,7 +81,7 @@ section.contact {
 
 		.contact-right-side {
 			position: relative;
-			left: 10%;
+			left: 9%;
 			top: 50px;
 			width: 50%;
 			margin-right: 7px;
@@ -116,6 +116,7 @@ section.contact {
 					margin-bottom: 10px;
 					width: 60px;
 					cursor: default;
+					// transition: all 1s;
 
 					i {
 						position: relative;
@@ -127,7 +128,7 @@ section.contact {
 						font-size: 1.8em;
 						text-align: center;
 						color: white;
-						transition: transform 0.75s, opacity 1.5s;
+						transition: transform 0.75s ease-in, opacity 1.5s;
 					}
 
 					[data-more="phone"]:after,
@@ -158,17 +159,34 @@ section.contact {
 					}
 				}
 
-				#phone {
+				.phone {
 					position: relative;
 					left: -50px;
 				}
 
-				#mail {
+				.mail {
 					position: relative;
 					left: -75px;
 				}
 
+				.phone:before,
+				.mail:before {
+						position: absolute;
+						left: -120px;
+						top: -130px;
+						width: 300px;
+						height: 300px;
+						border-radius: 100%;
+						content: '';
+						z-index: -100;
+						transition: all 1s ease-in;
+					}
+
 				a:hover {
+
+					&:before {
+						animation: contact-border-radius 1s;
+					}
 
 					i {
 						transform: rotateZ(360deg) rotateX(360deg) translateX(50px);

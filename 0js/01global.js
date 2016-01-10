@@ -62,6 +62,12 @@ function wrapperScroll(scroll, speed) {
 	}, speed);
 }
 
+// Contact hrefs prevent
+
+$('.phone-and-mail').click(function(event) {
+	return false;
+});
+
 // - resiti risponsivnes
 
 // - srediti animaciju malo

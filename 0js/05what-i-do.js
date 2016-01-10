@@ -8,12 +8,12 @@ var whatImages = $('.what-i-do-images'),
 	hiddenContent = imageMask.find('.hidden-tech'),
 	readMore = imageMask.find('a'),
 	showAll = $('.see-all'),
-	jebise = $('.what-i-do-container').find('a'),
+	whatA = $('.what-i-do-container').find('a'),
 	otherTools = $('.other-tools');
 
 showAll.hide();
 
-jebise.click(function(event) {
+whatA.click(function(event) {
 	event.preventDefault();
 });
 

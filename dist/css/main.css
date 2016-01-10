@@ -846,6 +846,64 @@ ul {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
     opacity: 0; } }
+@-webkit-keyframes contact-border-radius {
+  0% {
+    border: 2px solid transparent; }
+  20% {
+    border-bottom: 2px solid #0C73B8;
+    border-left: 2px solid transparent;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent; }
+  40% {
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid #0C73B8;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent; }
+  60% {
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-top: 2px solid #0C73B8;
+    border-right: 2px solid transparent; }
+  80% {
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-top: 2px solid transparent;
+    border-right: 2px solid #0C73B8;
+    -webkit-transform: rotateZ(360deg) rotateX(360deg);
+    transform: rotateZ(360deg) rotateX(360deg); }
+  100% {
+    border: 2px solid transparent;
+    -webkit-transform: rotateZ(360deg) rotateX(360deg);
+    transform: rotateZ(360deg) rotateX(360deg); } }
+@keyframes contact-border-radius {
+  0% {
+    border: 2px solid transparent; }
+  20% {
+    border-bottom: 2px solid #0C73B8;
+    border-left: 2px solid transparent;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent; }
+  40% {
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid #0C73B8;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent; }
+  60% {
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-top: 2px solid #0C73B8;
+    border-right: 2px solid transparent; }
+  80% {
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-top: 2px solid transparent;
+    border-right: 2px solid #0C73B8;
+    -webkit-transform: rotateZ(360deg) rotateX(360deg);
+    transform: rotateZ(360deg) rotateX(360deg); }
+  100% {
+    border: 2px solid transparent;
+    -webkit-transform: rotateZ(360deg) rotateX(360deg);
+    transform: rotateZ(360deg) rotateX(360deg); } }
 section.bees {
   -webkit-perspective: 1500px;
   perspective: 1500px;
@@ -928,7 +986,7 @@ section.more-bees {
       background: orange;
       -webkit-animation: more-bees 2s infinite;
       animation: more-bees 2s infinite; }
-  section.more-bees ul .ajmo {
+  section.more-bees ul .more-bees {
     transition: all 0.75s; }
 
 section.novo-hehe {
@@ -1346,9 +1404,11 @@ section.about-me .about-me-container {
       color: #0C73B8; }
       section.about-me .about-me-container .about-me-text .three a.slide-para:after {
         border-bottom: none; }
-      section.about-me .about-me-container .about-me-text .three a.slide-para p span {
-        color: #109F94;
-        font-weight: bold; }
+      section.about-me .about-me-container .about-me-text .three a.slide-para p {
+        background: none; }
+        section.about-me .about-me-container .about-me-text .three a.slide-para p span {
+          color: #109F94;
+          font-weight: bold; }
   section.about-me .about-me-container .about-me-images {
     position: relative;
     top: -145px;
@@ -2007,7 +2067,7 @@ section.contact .contact-container {
         position: relative;
         top: 40px; }
       section.contact .contact-container .contact-left-side form #contact-message {
-        width: 550px;
+        width: 500px;
         padding: 5px 0;
         top: 45px;
         resize: none; }
@@ -2026,7 +2086,7 @@ section.contact .contact-container {
           background: #109F94; }
   section.contact .contact-container .contact-right-side {
     position: relative;
-    left: 10%;
+    left: 9%;
     top: 50px;
     width: 50%;
     margin-right: 7px;
@@ -2071,8 +2131,8 @@ section.contact .contact-container {
           font-size: 1.8em;
           text-align: center;
           color: white;
-          transition: -webkit-transform 0.75s, opacity 1.5s;
-          transition: transform 0.75s, opacity 1.5s; }
+          transition: -webkit-transform 0.75s ease-in, opacity 1.5s;
+          transition: transform 0.75s ease-in, opacity 1.5s; }
         section.contact .contact-container .contact-right-side .contact-more-info a [data-more="phone"]:after,
         section.contact .contact-container .contact-right-side .contact-more-info a [data-more="mail"]:after {
           position: absolute;
@@ -2097,12 +2157,26 @@ section.contact .contact-container {
           content: '+381_65_420_5149'; }
         section.contact .contact-container .contact-right-side .contact-more-info a [data-more="mail"]:after {
           content: 'luka4ostojic4@gmail.com'; }
-      section.contact .contact-container .contact-right-side .contact-more-info #phone {
+      section.contact .contact-container .contact-right-side .contact-more-info .phone {
         position: relative;
         left: -50px; }
-      section.contact .contact-container .contact-right-side .contact-more-info #mail {
+      section.contact .contact-container .contact-right-side .contact-more-info .mail {
         position: relative;
         left: -75px; }
+      section.contact .contact-container .contact-right-side .contact-more-info .phone:before,
+      section.contact .contact-container .contact-right-side .contact-more-info .mail:before {
+        position: absolute;
+        left: -120px;
+        top: -130px;
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        content: '';
+        z-index: -100;
+        transition: all 1s ease-in; }
+      section.contact .contact-container .contact-right-side .contact-more-info a:hover:before {
+        -webkit-animation: contact-border-radius 1s;
+        animation: contact-border-radius 1s; }
       section.contact .contact-container .contact-right-side .contact-more-info a:hover i {
         -webkit-transform: rotateZ(360deg) rotateX(360deg) translateX(50px);
         transform: rotateZ(360deg) rotateX(360deg) translateX(50px); }

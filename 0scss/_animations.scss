@@ -526,3 +526,43 @@
 		opacity: 0
 	}
 }
+
+@keyframes contact-border-radius {
+	0% {
+		border: 2px solid transparent;
+	}
+
+	20% {
+		border-bottom: 2px solid $blue;
+		border-left: 2px solid transparent;
+		border-top: 2px solid transparent;
+		border-right: 2px solid transparent;
+	}
+
+	40% {
+		border-bottom: 2px solid transparent;
+		border-left: 2px solid $blue;
+		border-top: 2px solid transparent;
+		border-right: 2px solid transparent;
+	}
+
+	60% {
+		border-bottom: 2px solid transparent;
+		border-left: 2px solid transparent;
+		border-top: 2px solid $blue;
+		border-right: 2px solid transparent;
+	}
+
+	80% {
+		border-bottom: 2px solid transparent;
+		border-left: 2px solid transparent;
+		border-top: 2px solid transparent;
+		border-right: 2px solid $blue;
+		transform: rotateZ(360deg) rotateX(360deg);
+	}
+
+	100% {
+		border: 2px solid transparent;
+		transform: rotateZ(360deg) rotateX(360deg);
+	}
+}
