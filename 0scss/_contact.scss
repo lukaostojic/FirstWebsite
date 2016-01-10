@@ -77,6 +77,19 @@ section.contact {
 					}
 				}
 			}
+
+			p {
+				position: relative;
+				top: 32px;
+				// color: $green;
+				// text-decoration: underline;
+				font-size: 1.1em;
+			}
+
+			footer.big-footer {
+				position: relative;
+				top: 30px;
+			}
 		}
 
 		.contact-right-side {

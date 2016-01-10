@@ -72,7 +72,7 @@ body {
           -moz-user-select: none;
           -ms-user-select: none;
           user-select: none; }
-      body .site-wrapper .slide-container footer {
+      body .site-wrapper .slide-container footer.small-footer {
         display: none; }
       body .site-wrapper .slide-container .mask-rotate {
         -webkit-transform: rotateY(360deg);
@@ -2084,6 +2084,13 @@ section.contact .contact-container {
         transition: all 0.3s; }
         section.contact .contact-container .contact-left-side form #contact-submit:hover {
           background: #109F94; }
+    section.contact .contact-container .contact-left-side p {
+      position: relative;
+      top: 32px;
+      font-size: 1.1em; }
+    section.contact .contact-container .contact-left-side footer.big-footer {
+      position: relative;
+      top: 30px; }
   section.contact .contact-container .contact-right-side {
     position: relative;
     left: 9%;
@@ -2400,7 +2407,7 @@ section.contact .contact-container {
         margin-top: 0px;
         height: 3500px;
         opacity: 1; }
-        body .site-wrapper .slide-container footer {
+        body .site-wrapper .slide-container footer.small-footer {
           display: -webkit-flex;
           display: -ms-flexbox;
           display: flex;
@@ -2414,7 +2421,7 @@ section.contact .contact-container {
           color: white;
           -webkit-transform: translateZ(10px) translateY(-7px);
           transform: translateZ(10px) translateY(-7px); }
-          body .site-wrapper .slide-container footer .footer-up {
+          body .site-wrapper .slide-container footer.small-footer .footer-up {
             margin: 0 20px;
             position: relative;
             left: 0px;
@@ -2428,7 +2435,7 @@ section.contact .contact-container {
             -webkit-justify-content: space-around;
             -ms-flex-pack: distribute;
             justify-content: space-around; }
-            body .site-wrapper .slide-container footer .footer-up .phone-and-mail {
+            body .site-wrapper .slide-container footer.small-footer .footer-up .phone-and-mail {
               display: -webkit-flex;
               display: -ms-flexbox;
               display: flex;
@@ -2438,11 +2445,11 @@ section.contact .contact-container {
               -webkit-justify-content: center;
               -ms-flex-pack: center;
               justify-content: center; }
-              body .site-wrapper .slide-container footer .footer-up .phone-and-mail a {
+              body .site-wrapper .slide-container footer.small-footer .footer-up .phone-and-mail a {
                 position: relative;
                 color: white;
                 line-height: 22px; }
-            body .site-wrapper .slide-container footer .footer-up .external-links {
+            body .site-wrapper .slide-container footer.small-footer .footer-up .external-links {
               display: -webkit-flex;
               display: -ms-flexbox;
               display: flex;
@@ -2452,15 +2459,17 @@ section.contact .contact-container {
               -webkit-align-items: center;
               -ms-flex-align: center;
               align-items: center; }
-              body .site-wrapper .slide-container footer .footer-up .external-links a {
+              body .site-wrapper .slide-container footer.small-footer .footer-up .external-links a {
                 color: white;
                 margin: 0 12px;
                 font-size: 1.4em; }
-          body .site-wrapper .slide-container footer .footer-down {
+          body .site-wrapper .slide-container footer.small-footer .footer-down {
             position: relative;
+            bottom: 80px;
             left: calc(50% - 100px);
             width: 200px;
-            text-align: center; }
+            text-align: center;
+            color: #4B5767; }
         body .site-wrapper .slide-container .cube-mask {
           display: -webkit-flex;
           display: -ms-flexbox;
@@ -2580,6 +2589,8 @@ section.contact .contact-container {
                 body .site-wrapper .slide-container .cube-mask section.contact .contact-container .contact-left-side form #contact-email,
                 body .site-wrapper .slide-container .cube-mask section.contact .contact-container .contact-left-side form #contact-message {
                   width: 100%; }
+              body .site-wrapper .slide-container .cube-mask section.contact .contact-container .contact-left-side footer.big-footer {
+                display: none; }
             body .site-wrapper .slide-container .cube-mask section.contact .contact-container .contact-right-side {
               display: none; }
     body .overflow-visible {

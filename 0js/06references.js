@@ -76,7 +76,7 @@ viewMore.click(function(event) {
 			thisImg.addClass('image-3-left');
 			setTimeout(function() {
 				p2.addClass('image-3-other');
-			}, 150);
+			}, 200);
 			setTimeout(function() {
 				p1.addClass('image-3-other-2');
 			}, 400);
