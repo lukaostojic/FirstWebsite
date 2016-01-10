@@ -45,7 +45,10 @@ var body = $('html, body'),
 	});
 
 	// Hide navbar-plus
-	$('.navbar-plus').hide();				
+	$('.navbar-plus').hide();
+
+	// Chrome Detect
+	$.browser.chrome = /chrome/.test(navigator.userAgent.toLowerCase());	
 })();
 
 // Scroll Animation Functions

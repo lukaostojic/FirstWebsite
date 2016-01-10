@@ -214,6 +214,7 @@
 
 					.contact-right-side {
 						top: 115px;
+						left: 15%;
 						
 						&:before {
 							width: 350px;
@@ -620,6 +621,10 @@
 									#contact-message {
 										width: 100%;
 									}
+								}
+
+								p {
+									display: none;
 								}
 
 								footer.big-footer {

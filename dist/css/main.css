@@ -1,4 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+html {
+  max-width: 1600px;
+  position: relative;
+  margin: 0 auto; }
+
 body {
   margin: 0;
   padding: 0;
@@ -11,7 +16,7 @@ body {
   background-position: 0% 25%;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  transition: background-size 1.5s ease-in-out; }
+  transition: background-size 1.5s ease-in-out, background-position 1s; }
   body .site-wrapper {
     width: 100%;
     color: #4B5767; }
@@ -260,21 +265,21 @@ ul {
     transform: scale(1); } }
 @-webkit-keyframes border {
   0% {
-    border: 3px solid white; }
+    border: 1px solid white; }
   50% {
     border: 1px solid white;
     opacity: 0; }
   100% {
-    border: 3px solid white;
+    border: 1px solid white;
     opacity: 1; } }
 @keyframes border {
   0% {
-    border: 3px solid white; }
+    border: 1px solid white; }
   50% {
     border: 1px solid white;
     opacity: 0; }
   100% {
-    border: 3px solid white;
+    border: 1px solid white;
     opacity: 1; } }
 @-webkit-keyframes bee-a {
   0% {
@@ -2314,7 +2319,8 @@ section.contact .contact-container {
   .slide-container .cube-mask section.contact .contact-container .contact-left-side form #contact-message {
     width: 400px; }
   .slide-container .cube-mask section.contact .contact-container .contact-right-side {
-    top: 115px; }
+    top: 115px;
+    left: 15%; }
     .slide-container .cube-mask section.contact .contact-container .contact-right-side:before {
       width: 350px;
       height: 350px; }
@@ -2589,6 +2595,8 @@ section.contact .contact-container {
                 body .site-wrapper .slide-container .cube-mask section.contact .contact-container .contact-left-side form #contact-email,
                 body .site-wrapper .slide-container .cube-mask section.contact .contact-container .contact-left-side form #contact-message {
                   width: 100%; }
+              body .site-wrapper .slide-container .cube-mask section.contact .contact-container .contact-left-side p {
+                display: none; }
               body .site-wrapper .slide-container .cube-mask section.contact .contact-container .contact-left-side footer.big-footer {
                 display: none; }
             body .site-wrapper .slide-container .cube-mask section.contact .contact-container .contact-right-side {

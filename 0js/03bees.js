@@ -171,12 +171,14 @@ beeCont.find('div').click(function() {
 		});
 	}, 15000);
 	setTimeout(function() {
-		// var intervalBody = 95;
-		// setInterval(function(i) {
-		// 	body.css({
-		// 		'background-size': intervalBody--
-		// 	});
-		// }, 100);
+		if ($.browser.chrome) {
+			var intervalBody = 95;
+			setInterval(function(i) {
+				body.css({
+					'background-size': intervalBody--
+				});
+			}, 100);
+		}
 		var intervalImage = 50;
 		setInterval(function() {
 			header.css({

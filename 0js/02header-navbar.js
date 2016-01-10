@@ -56,6 +56,11 @@ navbarLi.click(function(event) {
 	setTimeout(function() {
 		navbar.addClass('ul-rotate');
 		upButton.addClass('up-visible');
+		if ($.browser.chrome){
+			body.css({
+				'background-position': '0% 50%'
+			});
+		}
 	}, 600);
 	setTimeout(function() {
 		body.addClass('body-overflow');
@@ -152,8 +157,15 @@ upButton.click(function(event) {
 
 	cv = headerNavbar.offset().top;
 	setTimeout(function() {
-		changeView(cv);
 	}, 200);
+	setTimeout(function() {
+		changeView(cv);
+		if ($.browser.chrome){
+			body.css({
+				'background-position': '0% 25%'
+			});
+		}
+	}, 500);
 	setTimeout(function() {
 		navbar.removeClass('ul-rotate');
 		upButton.removeClass('up-visible');
@@ -278,39 +290,19 @@ newNav.find('li').click(function() {
 	var thisLi = $(this),
 		thisGoto = thisLi.data('go');
 
-	// if (winWidth <= 450) {
-	// 	if (thisGoto === 'about') {
-	// 		cv = aboutMe.offset().top - 65;
-	// 		speed = 600;
-	// 	} else if (thisGoto === 'what') {
-	// 		cv = whatIdo.offset().top - 65;
-	// 		speed = 800;
-	// 	} else if (thisGoto === 'port') {
-	// 		cv = references.offset().top - 65;
-	// 		speed = 1200;
-	// 	} else if (thisGoto === 'contact') {
-	// 		cv = contact.offset().top - 65;
-	// 		speed = 1400;
-	// 	}
-	// }
-
-	
-	  // if (winWidth > 100) {
-		if (thisGoto === 'about') {
-			scroll = 655;
-			speed = 600;
-		} else if (thisGoto === 'what') {
-			scroll = 1460;
-			speed = 800;
-		} else if (thisGoto === 'port') {
-			scroll = 2295;
-			speed = 1200;
-		} else if (thisGoto === 'contact') {
-			scroll = 3295;
-			speed = 1400;
-		}
-	// }
-	// changeView(cv);
+	if (thisGoto === 'about') {
+		scroll = 655;
+		speed = 600;
+	} else if (thisGoto === 'what') {
+		scroll = 1460;
+		speed = 800;
+	} else if (thisGoto === 'port') {
+		scroll = 2295;
+		speed = 1200;
+	} else if (thisGoto === 'contact') {
+		scroll = 3295;
+		speed = 1400;
+	}
 	wrapperScroll(scroll, speed);
 });
 

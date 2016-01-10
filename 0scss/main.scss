@@ -28,6 +28,12 @@ $red: #E55126;
 
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
+html {
+	max-width: 1600px;
+	position: relative;
+	margin: 0 auto;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -40,7 +46,7 @@ body {
 	background-position: 0% 25%;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	transition: background-size 1.5s ease-in-out;
+	transition: background-size 1.5s ease-in-out, background-position 1s;
 
 	.site-wrapper {
 		width: 100%;
