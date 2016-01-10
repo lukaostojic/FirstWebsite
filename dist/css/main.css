@@ -1342,7 +1342,8 @@ section.about-me .about-me-container {
         margin: 0px 0px;
         background: rgba(255, 255, 255, 0.4); }
     section.about-me .about-me-container .about-me-text .three a.slide-para {
-      margin: -10px 0; }
+      margin: -10px 0;
+      color: #0C73B8; }
       section.about-me .about-me-container .about-me-text .three a.slide-para:after {
         border-bottom: none; }
       section.about-me .about-me-container .about-me-text .three a.slide-para p span {
@@ -1757,7 +1758,8 @@ section.references {
             color: #109F94; }
           section.references .references-container .references-image-container .port-mask .port-mask-text a {
             text-decoration: underline;
-            bottom: 5px; }
+            bottom: 5px;
+            color: #0C73B8; }
           section.references .references-container .references-image-container .port-mask .port-mask-text p {
             bottom: 5px; }
           section.references .references-container .references-image-container .port-mask .port-mask-text ul {
