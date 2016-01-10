@@ -72,7 +72,10 @@ showHide.find('a').on('click', function(event) {
 			'background-position': '50% 10%'
 		});
 	}, 1500);
-	event.preventDefault();
+});
+
+$('.unclickable').click(function(event) {
+	return false;
 });
 
 // About Me Trigger
