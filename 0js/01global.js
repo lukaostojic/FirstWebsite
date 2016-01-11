@@ -51,6 +51,12 @@ var body = $('html, body'),
 	$.browser.chrome = /chrome/.test(navigator.userAgent.toLowerCase());	
 })();
 
+// Resize Function
+
+// win.resize(function(event) {
+// 	location.reload();
+// });
+
 // Scroll Animation Functions
 
 function changeView(cv) {

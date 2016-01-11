@@ -288,22 +288,19 @@ var newNav = $('.small-nav').find('ul');
 
 newNav.find('li').click(function() {
 	var thisLi = $(this),
-		thisGoto = thisLi.data('go');
+		thisGoto = thisLi.data('go'),
+		minus = 105;
 
 	if (thisGoto === 'about') {
-		scroll = 655;
-		speed = 600;
+		cv = aboutMe.offset().top - minus;
 	} else if (thisGoto === 'what') {
-		scroll = 1460;
-		speed = 800;
+		cv = whatIdo.offset().top - minus;
 	} else if (thisGoto === 'port') {
-		scroll = 2295;
-		speed = 1200;
+		cv = references.offset().top - minus;
 	} else if (thisGoto === 'contact') {
-		scroll = 3295;
-		speed = 1400;
+		cv = contact.offset().top - minus;
 	}
-	wrapperScroll(scroll, speed);
+	changeView(cv);
 });
 
 // -------------------------------- //

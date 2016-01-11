@@ -1121,6 +1121,9 @@ section.header-navbar {
         -ms-transform: skew(-225deg) translateX(100px);
         transform: skew(-225deg) translateX(100px); }
         section.header-navbar header .rot-2 .rot-2-animation a {
+          position: absolute;
+          left: 20px;
+          top: 0px;
           display: block;
           -webkit-animation: arrow-bounce 2.5s infinite;
           animation: arrow-bounce 2.5s infinite;
@@ -2367,10 +2370,12 @@ section.contact .contact-container {
       display: none; }
     body .site-wrapper {
       position: absolute;
-      overflow: auto; }
+      overflow: visible; }
       body .site-wrapper section.header-navbar header {
         background-position: 5% 30%;
-        background-size: 300%; }
+        background-size: 300%;
+        height: 100vh;
+        transition: all 999s; }
         body .site-wrapper section.header-navbar header .header-buttons a.button {
           display: none; }
         body .site-wrapper section.header-navbar header .header-buttons a.hidden-header-button {

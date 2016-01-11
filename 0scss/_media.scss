@@ -299,13 +299,15 @@
 
 		.site-wrapper {
 			position: absolute;
-			overflow: auto;
+			overflow: visible;
 
 			section.header-navbar {
 
 				header {
 					background-position: 5% 30%;
 					background-size: 300%;
+					height: 100vh;
+					transition: all 999s;
 
 					.header-buttons {
 

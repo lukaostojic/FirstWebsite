@@ -79,6 +79,9 @@ section.header-navbar {
 				transform: skew(-225deg) translateX(100px);
 
 				a {
+					position: absolute;
+					left: 20px;
+					top: 0px;
 					display: block;
 					animation: arrow-bounce 2.5s infinite;
 					transition: all 0.5s

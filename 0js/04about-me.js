@@ -6,10 +6,10 @@ var containers = $('.containers'),
 	showHide = $('.show-hide'),
 	aboutMeMe = $('.about-me-text').find('.me'),
 	imageBack = $('.image-background'),
-	imageMe = 'url(../img/about-me/kkkk.png)',
-	imageSite = 'url(../img/about-me/site-4.jpg)',
+	imageMe = 'url(../dist/img/about-me/kkkk.png)',
+	imageSite = 'url(../dist/img/about-me/site-4.jpg)',
 	imageThree = 'url(../img/about-me/033.jpg)',
-	imageFour = 'url(../img/about-me/four.jpg)';
+	imageFour = 'url(../dist/img/about-me/four.jpg)';
 
 showHide.find('.slide-para').slideUp();
 
