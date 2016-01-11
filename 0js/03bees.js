@@ -49,6 +49,9 @@ beeCont.find('div').click(function() {
 	var interval = 25,
 		thisBee = $(this);
 
+	// $('.novo-div').css({
+	// 	left: -winWidth * 2.3
+	// });	
 	thisBee.css({
 		background: 'orange',
 	});
@@ -161,10 +164,9 @@ beeCont.find('div').click(function() {
 	setTimeout(function() {
 		$('.novo-div').css({
 			left: '-30%',
-			width: '200vh',
-			height: '200vh'
+			visibility: 'visible'
 		});
-	}, 11000);
+	}, 22500);
 	setTimeout(function() {
 		$('.header-buttons').css({
 			transform: 'scale(0)'

@@ -1002,8 +1002,11 @@ section.novo-hehe {
   background: black; }
   section.novo-hehe .novo-div {
     position: absolute;
-    left: -3200px;
+    left: -335vh;
     bottom: 0;
+    width: 200vh;
+    height: 200vh;
+    visibility: hidden;
     transition: left 75s; }
     section.novo-hehe .novo-div img {
       position: relative;
