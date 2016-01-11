@@ -107,6 +107,13 @@ beeCont.find('div').click(function() {
 			setTimeout(function() {
 				clearInterval(firstInt);
 			}, 19000);
+			setTimeout(function() {
+				if (winWidth < 1200) {
+					moreLi.css({
+						background: 'black'
+					});
+				}
+			}, 70000);
 		}, 500);
 	}, 2000);
 	setTimeout(function() {
@@ -119,6 +126,9 @@ beeCont.find('div').click(function() {
 		var secondInt = setInterval(function(i) {
 			randomBee();
 		}, 4250);
+		$('.novo-div').css({
+			height: '200vh'
+		});
 	}, 3000);
 
 // 7-10
@@ -195,6 +205,16 @@ beeCont.find('div').click(function() {
 	setTimeout(function() {
 		location.reload();
 	}, 90000);
+	setTimeout(function() {
+		if (winWidth < 1200) {
+			body.css({
+				background: 'black'
+			});
+			headerText.css({
+				color: 'black'
+			});
+		}
+	}, 70000);
 });
 
 // -------------------------------- //

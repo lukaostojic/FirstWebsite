@@ -988,7 +988,7 @@ section.more-bees {
       border-radius: 100%;
       width: 25%;
       height: 25%;
-      background: orange;
+      background: #E55126;
       -webkit-animation: more-bees 2s infinite;
       animation: more-bees 2s infinite; }
   section.more-bees ul .more-bees {
@@ -1005,7 +1005,6 @@ section.novo-hehe {
     left: -335vh;
     bottom: 0;
     width: 200vh;
-    height: 200vh;
     visibility: hidden;
     transition: left 75s; }
     section.novo-hehe .novo-div img {

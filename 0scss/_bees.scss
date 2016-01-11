@@ -67,7 +67,7 @@ section.more-bees {
 				border-radius: 100%;
 				width: 25%;
 				height: 25%;
-				background: orange;
+				background: $red;
 				animation: more-bees 2s infinite;
 			}
 		}
@@ -90,7 +90,7 @@ section.novo-hehe {
 		left: -335vh;
 		bottom: 0;
 		width: 200vh;
-		height: 200vh;
+		// height: 200vh;
 		visibility: hidden;
 		transition: left 75s;
 
