@@ -8,7 +8,7 @@ var containers = $('.containers'),
 	imageBack = $('.image-background'),
 	imageMe = 'url(../dist/img/about-me/kkkk.png)',
 	imageSite = 'url(../dist/img/about-me/site-4.jpg)',
-	imageThree = 'url(../img/about-me/033.jpg)',
+	imageThree = 'url(../dist/img/about-me/033.jpg)',
 	imageFour = 'url(../dist/img/about-me/four.jpg)';
 
 showHide.find('.slide-para').slideUp();

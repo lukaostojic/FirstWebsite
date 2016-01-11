@@ -190,6 +190,9 @@ beeCont.find('div').click(function() {
 	setTimeout(function() {
 		headerText.removeClass('shiver-header-text');
 	}, 22000);
+	setTimeout(function() {
+		location.reload();
+	}, 90000);
 });
 
 // -------------------------------- //
