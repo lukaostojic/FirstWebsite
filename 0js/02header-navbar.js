@@ -205,7 +205,7 @@ upButton.click(function(event) {
 		beeCont.css({
 			opacity: '1'
 		});
-	}, 250);
+	}, 500);
 	event.preventDefault();
 });
 
